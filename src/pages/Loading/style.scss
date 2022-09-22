@@ -1,0 +1,15 @@
+.loading-page{
+ background: url("./Rectangle1.png") no-repeat center center/cover;
+ min-height: 100vh;
+ display: flex;
+ align-items: flex-end;
+ padding: 64px;
+}
+.loading-welcome-page{
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+font-size: 40px;
+line-height: 55px;
+color: #FFFFFF;
+}

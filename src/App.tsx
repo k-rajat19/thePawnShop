@@ -1,31 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
+import Loading from './pages/Loading'
 
-const App = () => {
-  const [count, setCount] = useState(0);
-
-  const onClickHandler = () => {
-      return setCount(count + 1);
-  }
-
-  const renderSkeleton = () => {
-
-  }
-
-  
-  const render = () => {
-    
+export default function App() {
   return (
-      <div>
-          <button onClick={onClickHandler}>Increment Count</button>
-          <div> {count} </div>
-      </div>
-    )
-  }
-
-
-  return render();
+    <>
+<Loading/> 
+    </>
+  )
 }
-
-
-
-export default App
