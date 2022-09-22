@@ -5,6 +5,12 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  .btn-container{
+    position: absolute;
+    top: 48px;
+    left: 40px;
+  }
   .side-bar-tabs-container{
        border: 2px solid red;
        width: 100%;

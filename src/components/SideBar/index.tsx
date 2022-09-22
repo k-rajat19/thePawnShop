@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import Button from '../Button';
 import Tab from './Tab';
 
 
@@ -13,6 +14,10 @@ export default function SideBar():JSX.Element {
 const [activeTab, setActiveTab] = useState<number>(0);
   return (
     <div className="side-bar">
+       <div className="btn-container">
+        <Button childern={'Connect Wallet'}/>        
+       </div>
+      
        <div className="side-bar-tabs-container">
         {
           TabData.map((value,index)=>{
