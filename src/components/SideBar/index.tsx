@@ -11,7 +11,7 @@ const TabData:String[]=[
 ]
 export default function SideBar():JSX.Element {
   
-const [activeTab, setActiveTab] = useState<number>(0);
+const [activeTab, setActiveTab] = useState<number|null>(null);
   return (
     <div className="side-bar">
        <div className="btn-container">

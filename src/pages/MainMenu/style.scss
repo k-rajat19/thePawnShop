@@ -1,9 +1,18 @@
 .main-menu-container{
     background: url("./Rectangle2.png") no-repeat center center/cover;
-    min-height: 100vh;
+    min-height: 1117px;
+    
     .main-menu-inner-wrapper{
         border: 2px solid red;
         min-height: inherit;
+        display: flex;
+    justify-content: space-between;
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid green;
+        justify-content: center;
+    }
         
     }
 }

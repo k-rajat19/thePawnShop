@@ -3,7 +3,7 @@ import React from 'react'
 
 type TabProps={
     title:String,
-    activeIndex:number,
+    activeIndex:number|null,
     index:number,
     OnClick:React.MouseEventHandler
 }
