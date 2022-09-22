@@ -1,0 +1,40 @@
+.side-bar{
+  max-width: 569px;   
+  background: rgba(17, 17, 17, 0.8);
+  border: 2px solid blue;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .side-bar-tabs-container{
+       border: 2px solid red;
+       width: 100%;
+    .side-bar-tab{
+        font-weight: 400;
+font-size: 32px;
+line-height: 44px;
+text-transform: capitalize;
+
+color: #8C8C8C;
+display: flex;
+align-items: center;
+cursor: pointer;
+margin-bottom: 16px;
+  img{
+    width: 16px;
+    height: 34px;
+    margin-right: 17px;
+ }
+ .showArrow{
+    visibility: visible;
+ }
+ .hideArrow{
+    visibility: hidden;
+ }
+
+    }
+    .active{
+        color: #FFFFFF;
+
+    }
+  }
+}
