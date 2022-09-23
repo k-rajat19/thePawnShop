@@ -1,0 +1,33 @@
+.shop-interface{
+    background: url("./Rectangle 12.png") no-repeat center center/cover;
+    min-height: 100vh;
+    padding: calc(126px/2);
+    .shop-interface-inner-wrapper{
+        // border: 2px solid green;
+        .heading-container{
+            // border: 2px solid red;
+            text-align: center;
+            margin-bottom: 92px;
+            .heading{
+                // border: 2px solid blue;
+                font-size: 56px;
+line-height: 77px;
+color: #FFFFFF;
+
+            }
+            .sub-heading{
+                // border: 2px solid black;
+                font-size: 24px;
+line-height: 33px;
+color: #FFFFFF;
+
+
+            }
+        }
+        .cards-container{
+            // border: 2px solid blue;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
