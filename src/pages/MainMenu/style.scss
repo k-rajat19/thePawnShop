@@ -1,17 +1,43 @@
 .main-menu-container{
     background: url("./Rectangle2.png") no-repeat center center/cover;
-    min-height: 1117px;
+    min-height: 160vh;
+    padding: 0 40px;
     
     .main-menu-inner-wrapper{
-        border: 2px solid red;
+        
         min-height: inherit;
         display: flex;
     justify-content: space-between;
     .card-wrapper{
+       
         display: flex;
         flex-direction: column;
-        border: 2px solid green;
-        justify-content: center;
+        
+        // justify-content:flex-start;
+        align-items: flex-end;
+        // border: 2px solid red;
+        margin-top: 48px;
+
+        .pawn-shop-card{
+            background: url('./Rectangle 21.png') no-repeat center ;
+            min-width: 328px;
+            min-height: 244px;
+            
+            display: flex;
+            justify-content: center;
+            // margin-bottom: 40px;
+            div{
+                font-size: 56px;
+line-height: 56px;
+
+color: #FFFFFF;
+
+width: 80%;
+
+
+text-shadow: -19px 22px 0px rgba(0, 0, 0, 0.6);
+            }
+        }
     }
         
     }

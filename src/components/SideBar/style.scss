@@ -1,12 +1,13 @@
 .side-bar{
   max-width: 569px;   
   background: rgba(17, 17, 17, 0.8);
-  border: 2px solid blue;
+  // border: 2px solid blue;
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
   padding-left: 40px;
+  padding-right: 10px;
   .btn-container{
     position: absolute;
     top: 48px;

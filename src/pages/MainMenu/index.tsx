@@ -10,6 +10,10 @@ export default function MainMenu():JSX.Element {
       <div className="main-menu-inner-wrapper">
         <SideBar/>
       <div className="card-wrapper">
+        <div className="pawn-shop-card">
+           <div>The \Pawn Shop</div>
+
+        </div>
       <MainMenuCard data={[
     {
       imagePath:'Rectangle 22.png',
