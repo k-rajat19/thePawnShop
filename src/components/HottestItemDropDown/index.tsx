@@ -56,7 +56,7 @@ export default function HottestItemDropDown({items}:HottestItemDropDownProps) {
        <TwistedBorder/>
        <div className="items-container">
         {
-            // replace TestItems to items-prop when it is available
+            // replace TestItems with items-prop when it is available
           TestItems.map((value,index)=>{
             return(
 

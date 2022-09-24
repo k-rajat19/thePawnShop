@@ -1,5 +1,5 @@
 .buyer-machine{
- background: url('./Rectangle 54.png') no-repeat center center/contain;   
+ background: url('./Rectangle 54.png') no-repeat center center/cover;   
  width: calc(547px/1.07);
  height: calc(925px/1.07);
 //  border: 2px solid red;
@@ -42,7 +42,7 @@
     // border: 2px solid green;
     display: grid;
     grid-template-columns: auto auto auto;
-    // column-gap: 24px;
+    column-gap: 24px;
     row-gap: 24px;
     padding: 8px;
     max-height: 460px;
