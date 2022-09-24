@@ -1,12 +1,7 @@
 import React,{useState} from 'react'
 import Button from '../Button'
 import {SelectorButtonStyles,BuyButtonStyles,StakeButtonStyles} from './ButtonStyles'
-
-function Border():JSX.Element{
-    return(
-      <img src="./twistedborder.svg" alt="" />
-    )
-}
+import TwistedBorder from '../TwistedBorder'
 
 type Collection={
     
@@ -72,13 +67,13 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
         <div className="buyer-machine-inner-wrapper">
            <div className="heading">{showNfts===-1?'Explore':"Iamacollection"}</div>
             <div className="selector">
-                <Border/>
+                <TwistedBorder/>
                 <div className="selector-inner-wrapper">                    
                     <Button childern={<img src="./btnarrowleft.svg" alt="" />} styles={SelectorButtonStyles}/>
                      <div className="btn-text">Buy</div>
                     <Button childern={<img src="./btnarrowright.svg" alt="" />} styles={SelectorButtonStyles}/>
                 </div>
-                <Border/>
+                <TwistedBorder/>
             </div>
             <div className="nfts-container">
                {
@@ -125,7 +120,7 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
                
             </div>
             <div className="buy-section">
-                <Border/>
+                <TwistedBorder/>
                 <div className="inner-wrapper">
 
                 <div className="left-section">
@@ -137,7 +132,7 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
                     <Button childern={'Stake'} styles={StakeButtonStyles}/>
                 </div>
                 </div>
-                <Border/>
+                <TwistedBorder/>
             </div>
             <div className="bottom">
                 <div className="inner-wrapper">
@@ -145,7 +140,7 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
                 <div>$9.00</div>
 
                 </div>
-                <Border/>
+                <TwistedBorder/>
             </div>
         </div>
     </div>
