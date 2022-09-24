@@ -3,15 +3,16 @@ import React from 'react'
 declare interface ButtonProps{
     
         childern?:React.ReactNode;
-        styles?:React.CSSProperties
+        styles?:React.CSSProperties;
+        OnClick?:React.MouseEventHandler
     
 }
-export default function Button(props:ButtonProps) {   
+export default function Button({childern,styles,OnClick=()=>{}}:ButtonProps) {   
 
   
   return (
-     <div className="button" style={props.styles}>
-     {props.childern}
+     <div className="button" style={styles} onClick={OnClick}>
+     {childern}
      </div>
   )
 }

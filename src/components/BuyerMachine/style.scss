@@ -1,0 +1,125 @@
+.buyer-machine{
+ background: url('./Rectangle 54.png') no-repeat center center/contain;   
+ width: calc(547px/1.07);
+ height: calc(925px/1.07);
+//  border: 2px solid red;
+ padding: 22px;
+
+.buyer-machine-inner-wrapper{
+    // border: 2px solid blue;
+     overflow: hidden   ;
+
+}
+ .heading{
+    font-size: 24px;
+    line-height: 33px;   
+    color: #8C8C8C;
+    margin-bottom: 16px;
+    text-align: center;
+ }
+ .selector{
+    // border: 2px solid green;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    // padding: 18.6px;
+    
+    .selector-inner-wrapper{
+        display: flex;
+        // border: 2px solid red;
+        justify-content: center;
+        margin: 18.6px 0px;
+       
+.btn-text{
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin:0px 24px;
+}
+    }
+ }
+ .nfts-container{
+    // border: 2px solid green;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // column-gap: 24px;
+    row-gap: 24px;
+    padding: 8px;
+    max-height: 460px;
+    overflow-y: auto;
+    align-items: center;
+    .collection{
+        // border: 2px solid red;
+        background: url('./Rectangle 14.png') no-repeat center ;
+        height: 131px;
+        width: 131px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .image-container{
+            height: 100px;
+            width: 100px;
+            // border: 2px solid red;
+            img{
+object-fit: contain;
+max-width: 100%;
+            }
+            svg{
+object-fit: contain;
+max-width: 100%;
+            }
+        }
+    }
+ }
+ .buy-section{
+    // border: 2px solid red;
+    
+    .inner-wrapper{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 0px;
+        .left-section{
+            :nth-child(1){
+                font-size: 24px;
+                line-height: 33px;
+                color: #FFFFFF;
+                
+            }
+            :nth-child(2){
+                font-size: 16px;
+line-height: 22px;
+color: #8C8C8C;
+
+            }
+
+    
+        }
+        .right-section{
+    
+        }
+    }
+ }
+ .bottom{
+    // border: 2px solid green;
+    .inner-wrapper{
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        :nth-child(1){
+            font-size: 24px;
+line-height: 33px;
+color: #FFFFFF;
+
+
+        }
+        :nth-child(2){
+            font-size: 24px;
+            line-height: 33px;
+            text-align: right;
+            color: #FFFFFF;
+        }
+    }
+ }
+}
