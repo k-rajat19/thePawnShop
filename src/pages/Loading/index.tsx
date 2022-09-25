@@ -13,16 +13,17 @@ export default function Loading():JSX.Element{
   const [showMainMenu, setShowMainMenu] = useState<boolean>(false);
 
   useEffect(() => {
-   setInterval(()=>setProgress(progress+49),1000);
-  }, [progress])
+   setInterval(()=>setProgress(progress+99),1000);
+  }, [ ])
 
   // this check needed because of transition timing of width in <ProgressBar/> which is 1s
-  progress==99?setInterval(()=>setshowText(true),1500):''
+  progress==100?setInterval(()=>setshowText(true),2500):''
 
   
  if (showMainMenu){
   return(
      <MainMenu/>
+    
   )
  }
  else if (showText){

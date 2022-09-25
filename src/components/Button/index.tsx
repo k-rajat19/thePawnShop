@@ -7,6 +7,7 @@ declare interface ButtonProps{
         OnClick?:React.MouseEventHandler
     
 }
+//ToDo: Manage styles for mobile devices
 export default function Button({childern,styles,OnClick=()=>{}}:ButtonProps) {   
 
   

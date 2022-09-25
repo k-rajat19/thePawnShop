@@ -1,7 +1,8 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import ShopInterfaceCard from '../../../components/ShopInterfaceCard'
 
 export default function ShopInterface() {
+  const [showmobileCard, setShowmobileCard] = useState(1);
 
   return (
     <div className="shop-interface">
@@ -14,6 +15,24 @@ export default function ShopInterface() {
             <ShopInterfaceCard imagePath={['Rectangle 24.png']} title={'Sell'}/>
             <ShopInterfaceCard imagePath={['Rectangle 25.png','Rectangle 25.png']} title={'Buy'}/>
             <ShopInterfaceCard imagePath={['Rectangle 26.png']} title={'Earn'}/>
+          </div>
+          <div className="cards-container-mobile">
+            {showmobileCard===0?  <ShopInterfaceCard imagePath={['Rectangle 24.png']} title={'Sell'}/>:showmobileCard===1? <ShopInterfaceCard imagePath={['Rectangle 25.png','Rectangle 25.png']} title={'Buy'}/>:<ShopInterfaceCard imagePath={['Rectangle 26.png']} title={'Earn'}/>}
+          
+           
+            
+          </div>
+
+          <div className="mobile-slider-btns">
+           <div className="btn" onClick={()=>showmobileCard>0?setShowmobileCard(showmobileCard-1):''}><img src="./mobilearrowleft.svg" alt="" /></div>
+           <div className="bars-container">
+
+           <div className={showmobileCard===0?'bar active':'bar'}></div>
+           <div  className={showmobileCard===1?'bar active':'bar'}></div>
+           <div  className={showmobileCard===2?'bar active':'bar'}></div>
+            
+           </div>
+           <div className="btn" onClick={()=>showmobileCard<2?setShowmobileCard(showmobileCard+1):''}><img src="./mobilearrowright.svg" alt="" /></div>
           </div>
          </div>
     </div>

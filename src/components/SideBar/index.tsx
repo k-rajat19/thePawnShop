@@ -4,18 +4,20 @@ import Button from '../Button';
 import Tab from './Tab';
 
 
+
 const TabData:String[]=[
   
   'Enter the shop','Get $RED','Auction house','What is the pawn shop ?','garbage collector'
   
 ]
+// ToDo: Create a SideBarContext to Navigate pages through this component
 export default function SideBar():JSX.Element {
   
 const [activeTab, setActiveTab] = useState<number|null>(null);
   return (
     <div className="side-bar">
        <div className="btn-container">
-        <Button childern={'Connect Wallet'}/>        
+        <Button childern={'Connect Wallet'} />        
        </div>
       
        <div className="side-bar-tabs-container">

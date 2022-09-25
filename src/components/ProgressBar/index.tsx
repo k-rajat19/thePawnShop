@@ -11,7 +11,7 @@ export default function ProgressBar({width='1'}:ProgressBarProps):JSX.Element {
         height: '100%',
         width: `${width}%`,
         backgroundColor:'#FFFFFF',
-        transition: 'width 1s ease-in-out',
+        transition: 'width 2s ease-in-out',
       }
   return (
     <div className="progress-bar-wrapper">
