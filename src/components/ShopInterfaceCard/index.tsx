@@ -2,14 +2,15 @@ import React,{useState} from 'react'
 
 type ShopInterfaceCardProps={
     imagePath:string[];
-    title:string
+    title:string;
+    onClick:React.MouseEventHandler
 
 }
 
-export default function ShopInterfaceCard({imagePath,title}:ShopInterfaceCardProps):JSX.Element {
+export default function ShopInterfaceCard({imagePath,title,onClick=()=>{}}:ShopInterfaceCardProps):JSX.Element {
 const [activeTab, setActiveTab] = useState(0)
   return (
-    <div className="shop-interface-card">
+    <div className="shop-interface-card" onClick={onClick}>
          <div className="card-inner-wrapper">
              <div className="heading">{title}</div>
              <div className="image-container">

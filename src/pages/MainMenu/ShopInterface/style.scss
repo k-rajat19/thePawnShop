@@ -54,9 +54,13 @@ line-height: 19px;
         }
         .mobile-slider-btns{
             // border: 2px solid blue;
-            display: flex;
+           
+            display: none;
+            @media(max-width:768px){
+                display: flex;
             justify-content: space-between;
             align-items: center;
+            }
             .btn{
                 background: #1E2023;
                 width: 30px;

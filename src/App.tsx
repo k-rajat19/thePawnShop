@@ -8,9 +8,6 @@ export default function App() {
   return (
     <>
 <Loading/> 
-{/* <MainMenu/> */}
-{/* <BuyPortal/> */}
-{/* <ShopInterface/> */}
     </>
   )
 }

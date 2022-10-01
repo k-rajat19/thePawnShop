@@ -10,8 +10,17 @@ const TabData:String[]=[
   'Enter the shop','Get $RED','Auction house','What is the pawn shop ?','garbage collector'
   
 ]
-// ToDo: Create a SideBarContext to Navigate pages through this component
-export default function SideBar():JSX.Element {
+
+type SideBarProps={
+  setTab:React.Dispatch<React.SetStateAction<number|null>>
+}
+
+export default function SideBar({setTab}:SideBarProps):JSX.Element {
+
+  const onClick=(index:number)=>{
+    setActiveTab(index)
+    setTab(index)
+  }
   
 const [activeTab, setActiveTab] = useState<number|null>(null);
   return (
@@ -24,7 +33,7 @@ const [activeTab, setActiveTab] = useState<number|null>(null);
         {
           TabData.map((value,index)=>{
             return(
-          <Tab title={value} index={index} activeIndex={activeTab} OnClick={()=>setActiveTab(index)} />
+          <Tab title={value} index={index} activeIndex={activeTab} OnClick={()=>onClick(index)} />
             )
           })
         }
