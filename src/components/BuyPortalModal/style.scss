@@ -1,20 +1,20 @@
 .buy-portal-modal{
     background: url('./Rectangle 56.png') no-repeat center/cover;
-    //    border: 2px solid green;
+    
        width: 547px;
        height: 494px;
        padding: 35px;
 .inner-wrapper{ 
 
     .close-section{
-    //  border: 2px solid red;
+    
      display: flex;
      justify-content: flex-end;
      cursor: pointer;
      margin-bottom: 16px;
     }
     .nft-details-container{
-        // border: 2px solid red;
+        
         .heading{
             font-size: 16px;
             line-height: 22px; 
@@ -23,7 +23,7 @@
             margin-bottom: 12px;
         }
         .nft-container{
-        //  border: 2px solid green;
+        
          overflow-y: auto;
          max-height: 170px;
         }

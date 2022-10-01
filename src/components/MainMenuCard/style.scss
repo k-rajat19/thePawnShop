@@ -14,14 +14,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    // border: 2px solid red;
+    
     width: 100%;
     
     .image-container{
         width: 100%;
         height: 100%;
         
-        // border: 2px solid green;
+        
         img{
             
             object-fit: contain;
@@ -35,7 +35,7 @@
     }
     .text-container{
         
-        // border: 2px solid red;
+        
         margin-bottom: 40px;
         margin-top: 35px;
         .title{

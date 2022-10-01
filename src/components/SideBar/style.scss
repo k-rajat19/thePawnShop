@@ -1,7 +1,7 @@
 .side-bar{
   max-width: 569px;   
   background: rgba(17, 17, 17, 0.8);
-  // border: 2px solid blue;
+  
   min-height: inherit;
   display: flex;
   align-items: center;
@@ -20,22 +20,7 @@
       top: -89px;
     }
   }
-//   .connect-wallet{
-//     @media(max-width:768px){
-//       width: 256px;
-//       height: 56px;
-//       font-size: 18px;
-// line-height: 25px;
-// background-color:'#FFFFFF';
-// border:'none';
-// color:'#000000';
-// outline:'none';
-// cursor:'pointer';
-// display:'flex';
-// align-items:'center';
-// justify-content:'center';
-//     }
-//   }
+
   .side-bar-tabs-container{
        width: 100%;
     .side-bar-tab{

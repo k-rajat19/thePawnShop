@@ -2,14 +2,14 @@
  background: url('./Rectangle 55.png') no-repeat center center/cover;
  width: 547px;
  height: 64px;
-//  border: 2px solid blue;
+
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  cursor: pointer;
  .dropdown-inner-wrapper{
-    // border: 2px solid red;
+    
     .heading{
         font-size: 24px;
 line-height: 33px;
@@ -25,11 +25,11 @@ color: #8C8C8C;
 }
 .dropdown-items-container{
    background: url('./Rectangle 56.png') no-repeat center center/cover;
-//    border: 2px solid green;
+
    width: 547px;
    height: 512px;
    padding: 24px;
-//    z-index: 100;
+
 
    .inner-wrapper{
     
@@ -39,7 +39,7 @@ color: #8C8C8C;
         align-items: center;
         justify-content: center;
         margin-bottom: 16px;
-        // border: 2px solid red;
+        
         
         .heading{
             font-size: 24px;
@@ -53,14 +53,14 @@ color: #8C8C8C;
        }
        }
        .items-container{
-        // border: 2px solid red;
+        
         margin-top: 24px;
         overflow-y: auto;
         max-height: 340px;
         .item{
             display: flex;
             justify-content: space-between;
-            // border: 2px solid green;
+            
             margin-bottom: 32px;
             .left-section{
                 font-size: 16px;
@@ -78,7 +78,7 @@ color: #8C8C8C;
                 }
             }
             .right-section{
-                // border: 2px solid red;
+                
                 font-size: 16px;
                 display: flex;
                 align-items: center;
@@ -91,13 +91,7 @@ color: #8C8C8C;
         margin-left: 15px;
         margin-right: 10px;
     }
-    // .priceUp{
-    //     color: #21FF5F;
-    // }
-    // .priceDown{
-    //     color:  #FF3F3F;;
-    // }
-    
+  
     
             }
         }

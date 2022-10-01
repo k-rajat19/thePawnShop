@@ -27,9 +27,9 @@
         display: flex;
         flex-direction: column;
         
-        // justify-content:flex-start;
+        
         align-items: flex-end;
-        // border: 2px solid red;
+        
         margin-top: 48px;
 
         .pawn-shop-card{
@@ -40,7 +40,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // margin-bottom: 40px;
+            
             div{
                 font-size: 56px;
 line-height: 56px;
