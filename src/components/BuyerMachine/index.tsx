@@ -62,6 +62,8 @@ const NFTDefaultData=
 export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Element {
     const [showNfts, setShowNfts] = useState<number>(-1);
 
+    const [selectedCollection, setSelectedCollection] = useState(0);
+
   return (
     <div className="buyer-machine">
         <div className="buyer-machine-inner-wrapper">
