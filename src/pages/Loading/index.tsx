@@ -17,7 +17,7 @@ export default function Loading():JSX.Element{
   }, [ ])
 
   // this check needed because of transition timing of width in <ProgressBar/> which is 1s
-  progress==100?setInterval(()=>setshowText(true),2500):''
+  progress==100?setTimeout(()=>setshowText(true),2500):''
 
   
  if (showMainMenu){

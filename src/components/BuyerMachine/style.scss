@@ -1,13 +1,14 @@
 .buyer-machine{
- background: url('./Rectangle 54.png') no-repeat center center/cover;   
+ background: url('../../../public/Rectangle 54.png') no-repeat  center/cover;   
  width: calc(547px/1.07);
  height: calc(925px/1.07);
 
  padding: 22px;
+ border: 2px solid red;
 
 .buyer-machine-inner-wrapper{
     
-     overflow: hidden   ;
+     overflow: hidden;
 
 }
  .heading{
@@ -50,7 +51,7 @@
     align-items: center;
     .collection{
         
-        background: url('./Rectangle 14.png') no-repeat center ;
+        background: url('../../public/Rectangle 14.png') no-repeat center ;
         height: 131px;
         width: 131px;
         display: flex;
@@ -93,9 +94,6 @@ color: #8C8C8C;
 
             }
 
-    
-        }
-        .right-section{
     
         }
     }

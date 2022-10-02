@@ -1,5 +1,5 @@
 .main-menu-container{
-    background: url("./Rectangle2.png") no-repeat center center/cover;
+    background: url("../../public/Rectangle2.png") no-repeat center center/cover;
     min-height: 160vh;
     padding: 0 40px;
     @media(max-width:768px){
@@ -33,7 +33,7 @@
         margin-top: 48px;
 
         .pawn-shop-card{
-            background: url('./Rectangle 21.png') no-repeat center  center/cover;
+            background: url('../../public/Rectangle 21.png') no-repeat center  center/cover;
             min-width: 328px;
             min-height: 244px;
             
