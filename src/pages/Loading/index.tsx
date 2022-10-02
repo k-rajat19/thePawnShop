@@ -14,7 +14,7 @@ export default function Loading():JSX.Element{
 
   useEffect(() => {
    setInterval(()=>setProgress(progress+99),1000);
-  }, [ ])
+  }, [])
 
   // this check needed because of transition timing of width in <ProgressBar/> which is 1s
   progress==100?setTimeout(()=>setshowText(true),2500):''

@@ -48,9 +48,10 @@
     max-height: 460px;
     overflow-y: auto;
     align-items: center;
+    overflow-x: hidden;
     .collection{
-        
-        background: url('../../public/Rectangle 14.png') no-repeat center ;
+        // actually we need an image along with question logo here, 
+        background: url('../../public/collectionbg.svg') no-repeat center ;
         height: 131px;
         width: 131px;
         display: flex;
@@ -69,6 +70,9 @@ object-fit: contain;
 max-width: 100%;
             }
         }
+    }
+    .collection-active{
+        
     }
  }
  .buy-section{

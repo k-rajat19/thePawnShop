@@ -7,7 +7,8 @@ import ShopInterface from './pages/MainMenu/ShopInterface'
 export default function App() {
   return (
     <>
-<Loading/> 
+{/* <Loading/>  */}
+<BuyPortal/>
     </>
   )
 }
