@@ -22,6 +22,11 @@ export default function NavBar() {
             </div>
 
             </div>
+            <div className="mobile-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
          </div>
     </div>
   )

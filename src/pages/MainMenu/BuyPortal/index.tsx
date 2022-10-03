@@ -9,7 +9,9 @@ export default function BuyPortal() {
     <div className="buy-portal">
          <NavBar/>
          <div className="buy-portal-inner-wrapper">
+          <div className="buyer-machine-wrapper">
              <BuyerMachine/>
+          </div>
              <div className="dropdown-container">
              <HottestItemDropDown items={[{collectionImage:'',collectionName:'',price:''}]}/>
              <div className="modal-container">

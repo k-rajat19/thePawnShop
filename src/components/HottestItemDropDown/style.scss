@@ -8,6 +8,10 @@
  align-items: center;
  justify-content: center;
  cursor: pointer;
+ @media(max-width:600px){
+    width: 370px;
+    
+ }
  .dropdown-inner-wrapper{
     
     .heading{
@@ -29,7 +33,10 @@ color: #8C8C8C;
    width: 547px;
    height: 512px;
    padding: 24px;
-
+   @media(max-width:600px){
+    width: 370px;
+    
+ }
 
    .inner-wrapper{
     

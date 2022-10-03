@@ -4,7 +4,10 @@
  height: calc(925px/1.07);
 
  padding: 22px;
-
+ @media(max-width:600px){
+    width: 370px;
+    
+ }
 .buyer-machine-inner-wrapper{
     
      overflow: hidden;
@@ -49,6 +52,10 @@
     overflow-y: auto;
     align-items: center;
     overflow-x: hidden;
+    @media(max-width:600px){
+        grid-template-columns: auto auto;
+        
+     }
     .collection{
         // actually we need an image along with question logo here, 
         background: url('../../public/collectionbg.svg') no-repeat center ;

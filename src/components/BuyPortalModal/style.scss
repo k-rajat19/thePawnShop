@@ -4,6 +4,11 @@
        width: 547px;
        height: 494px;
        padding: 35px;
+       @media(max-width:600px){
+        width: 370px;
+        padding: 10px;
+        
+     }
 .inner-wrapper{ 
 
     .close-section{
