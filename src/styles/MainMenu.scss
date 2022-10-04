@@ -3,7 +3,8 @@
     min-height: 160vh;
     padding: 0 40px;
     @media(max-width:768px){
-        min-height: 100vh;
+        min-height: unset;
+        max-height: 120vh;
         padding-bottom: 128px;
     }
     

@@ -5,11 +5,9 @@ background: #111111;
 display: flex;
 align-items: center;
 padding: 16px 32px;
-// @media(max-width:1024px){
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-// }
+@media(max-width:1024px){
+   padding: 16px;
+}
     .navbar-inner-wrapper{
  display: flex;
  justify-content: space-between;
