@@ -1,6 +1,10 @@
 import React from 'react'
 
-export default function NavBar() {
+type NavBarProps={
+   chest?:boolean
+}
+
+export default function NavBar({chest=false}:NavBarProps) {
   return (
     <div className="navbar">
          <div className="navbar-inner-wrapper">
@@ -20,6 +24,12 @@ export default function NavBar() {
                <div className="name">08xxdrtzzea3</div>
                <div className="logo"></div>
             </div>
+            {
+               chest&&
+            <div className="chest-box">
+               <img src="./chest.svg" alt="" />
+            </div>
+            }
 
             </div>
             <div className="mobile-btn">

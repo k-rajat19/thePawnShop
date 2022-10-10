@@ -1,0 +1,126 @@
+.activity-dropdown{
+    background: url('../../public/Rectangle 55.png') no-repeat center center/cover;
+    width: 547px;
+    height: 64px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media(max-width:600px){
+       width: 350px;
+       
+    }
+    .dropdown-inner-wrapper{
+       
+       .heading{
+           font-size: 24px;
+   line-height: 33px;
+   color: #8C8C8C;
+   
+   
+       }
+      .down-arrow{
+       margin-left: 5px;
+      }
+   
+    }
+   }
+   .dropdown-items-container{
+      background: url('../../public/Rectangle 56.png') no-repeat center center/cover;
+   
+      width: 547px;
+      height: 672px;
+      padding: 24px;
+      @media(max-width:600px){
+       width: 350px;
+       
+    }
+   
+      .inner-wrapper{
+       
+   
+          .heading-container{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-bottom: 16px;
+           
+           
+           .heading{
+               font-size: 24px;
+       line-height: 33px;
+       color: #8C8C8C;
+       
+       
+           }
+          .up-arrow{
+           margin-left: 5px;
+          }
+          }
+          .items-wrapper{
+            
+            .activity-container{
+                
+                .ac-heading{
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                    
+                    
+                    color: #8C8C8C;
+                }
+                .ac-main{
+                    height: 172px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    
+                    display: flex;
+                    flex-direction: column;
+                >:last-child{
+                    .line-container{
+
+                        display: none;
+                    }
+                }
+                    .activity-item{
+                        
+                        display: flex;
+                        justify-content: space-between;
+                      align-items: center;
+                        .item-1{
+                            font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+align-items: center;
+display: flex;
+color: #FFFFFF;
+img{
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    margin-right: 16px;
+}
+                        }
+                        .item-2{
+                            font-size: 14px;
+line-height: 19px;
+
+color: #8C8C8C;
+                        }
+                    }
+                    .line-container{
+                        border-left: 1px solid rgba(61, 61, 61, 1);
+                        min-height: 32px;
+                        margin-left: 16px;
+                    }
+
+                }
+            }
+          }
+        
+      }
+   }

@@ -1,0 +1,164 @@
+.auction-modal{
+    background: url('../../public/Rectangle 56.png') no-repeat center/cover;
+    
+       width: 547px;
+       min-height: 494px;
+       padding: 35px;
+       @media(max-width:600px){
+        width: 350px;
+        padding: 10px;
+        
+     }
+.inner-wrapper{ 
+
+    .close-section{
+    
+     display: flex;
+     justify-content: flex-end;
+     cursor: pointer;
+     margin-bottom: 16px;
+    }
+    .nft-details-container{
+        .timer-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            .time-up{
+                line-height: 44px;
+                font-size: 32px;
+                color: white;
+            }
+            span{
+                font-size: 32px;
+line-height: 44px;
+
+color: #FFFFFF;
+
+            }
+        }
+        .heading{
+            font-size: 16px;
+            line-height: 22px; 
+            color: #8C8C8C;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .nft-container{
+        
+         overflow-y: auto;
+         max-height: 170px;
+         margin-bottom: 30px;
+         
+         .bid{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 11px;
+            .item-1{
+
+                font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #8C8C8C;
+            }
+            .item-2{
+                font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+            }
+
+         }
+         .works{
+            display: flex;
+            justify-content: space-between;
+            .item-1{
+                font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #4652C1;
+display: flex;
+align-items: center;
+img{
+    margin-left: 3px;
+}
+            }
+            .item-2{
+                font-size: 14px;
+line-height: 19px;
+
+color: #21FF5F;
+background: #262323;
+border-radius: 24px;
+padding: 12px 16px 12px 16px;
+            }
+         }
+        }
+        .pricing-section{
+            
+         .price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+line-height: 22px;
+color: #8C8C8C;
+margin-bottom: 8px;
+margin-top: 8px;
+         }  
+         .total{
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+line-height: 33px;
+color: #FFFFFF;
+margin-bottom: 8px;
+         } 
+        }
+    }
+}
+}
+.selected-nft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    .nft-info{
+        display: flex;
+    .image-container{
+        width: 56px;
+        height: 56px;
+        border: 1px solid white;
+       img{
+        object-fit: contain;
+        
+       }
+       svg{
+        object-fit: contain;
+       }
+        }
+        .other{
+            display: flex;
+            flex-direction: column;
+            margin-left: 8px;
+         :nth-child(1){
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+         }
+         :nth-child(2){
+            font-size: 16px;
+            line-height: 22px;
+            color: #8C8C8C;
+         }
+        }
+    }
+  
+
+}
