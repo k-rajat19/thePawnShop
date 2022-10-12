@@ -1,14 +1,14 @@
-.buyer-machine{
-    background: url('../../public/auctionmachinebg.svg') no-repeat  center/cover;   
-    width: calc(848px/1.15);
-    height: calc(964px/1.15);
+.auction-machine{
+    background: url('../public/auctionmachinebg.svg') no-repeat  center/cover;   
+    width: calc(848px/1.19);
+    height: calc(964px/1.19);
    
     padding: 22px;
     @media(max-width:600px){
        width: 350px;
        
     }
-   .buyer-machine-inner-wrapper{
+   .auction-machine-inner-wrapper{
        
         overflow: hidden;
    
@@ -45,8 +45,8 @@
        
        display: grid;
        grid-template-columns: auto auto auto auto;
-       column-gap: 24px;
-       row-gap: 24px;
+       column-gap: 12px;
+       row-gap: 12px;
        padding: 8px;
        max-height: 460px;
        overflow-y: auto;

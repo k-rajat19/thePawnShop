@@ -6,12 +6,8 @@ export default function ShopInterface() {
   const [showmobileCard, setShowmobileCard] = useState(1);
   const [activeCard, setActiveCard] = useState<string|null>(null);
 
-  if(activeCard==='Buy'){
-    return(
-      <BuyPortal/>
-    )
-  }
-  else{
+
+  
     return (
       <div className="shop-interface">
            <div className="shop-interface-inner-wrapper">
@@ -32,7 +28,7 @@ export default function ShopInterface() {
             </div>
   
             <div className="mobile-slider-btns">
-             <div className="btn" onClick={()=>showmobileCard>0?setShowmobileCard(showmobileCard-1):''}><img src="./mobilearrowleft.svg" alt="" /></div>
+             <div className="btn" onClick={()=>showmobileCard>0?setShowmobileCard(showmobileCard-1):''}><img src="/mobilearrowleft.svg" alt="" /></div>
              <div className="bars-container">
   
              <div className={showmobileCard===0?'bar active':'bar'}></div>
@@ -40,7 +36,7 @@ export default function ShopInterface() {
              <div  className={showmobileCard===2?'bar active':'bar'}></div>
               
              </div>
-             <div className="btn" onClick={()=>showmobileCard<2?setShowmobileCard(showmobileCard+1):''}><img src="./mobilearrowright.svg" alt="" /></div>
+             <div className="btn" onClick={()=>showmobileCard<2?setShowmobileCard(showmobileCard+1):''}><img src="/mobilearrowright.svg" alt="" /></div>
             </div>
            </div>
       </div>
@@ -49,4 +45,3 @@ export default function ShopInterface() {
 
   }
 
-}

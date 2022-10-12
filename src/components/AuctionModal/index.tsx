@@ -67,12 +67,12 @@ export default function AuctionModal() {
     <div className="auction-modal">
         <div className="inner-wrapper">
         <div className="close-section">
-            <img src="./close.png" alt="" />
+            <img src="/close.png" alt="" />
 
         </div>
         <div className="nft-details-container">
             <div className="timer-container">
-                <img src="./clock.svg" alt="" />
+                <img src="/clock.svg" alt="" />
                 {
               timeUp? <div className="time-up">Time Up!!!</div> :
                 <span><span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span></span>
@@ -90,11 +90,11 @@ export default function AuctionModal() {
      </div>
     </div>
     <div className="bid">
-        <span className='item-1'>Latest bid <img src="./bid.svg" alt="" /></span>
+        <span className='item-1'>Latest bid <img src="/bid.svg" alt="" /></span>
         <span className='item-2'>$17.8</span>
     </div>
     <div className="works">
-    <span className='item-1'>How it works? <img src="./warnbluelogo.svg" alt="" /></span>
+    <span className='item-1'>How it works? <img src="/warnbluelogo.svg" alt="" /></span>
         <span className='item-2'>Collection Auction</span>
     </div>
             </div>

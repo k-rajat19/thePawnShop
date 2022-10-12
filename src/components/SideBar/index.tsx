@@ -5,10 +5,27 @@ import Tab from './Tab';
 
 
 
-const TabData:String[]=[
-  
-  'Enter the shop','Get $RED','Auction house','What is the pawn shop ?','garbage collector'
-  
+
+const TabData=[{
+  title:'Enter the shop',
+  link:'/shop_interface'
+},
+{
+  title:'Get $RED',
+  link:''
+},
+{
+  title:'Auction house',
+  link:'/auction_house'
+},
+{
+  title:"What is the pawn shop ?",
+  link:''
+},
+{
+  title:'garbage collector',
+  link:''
+}  
 ]
 
 type SideBarProps={
@@ -33,7 +50,7 @@ const [activeTab, setActiveTab] = useState<number|null>(null);
         {
           TabData.map((value,index)=>{
             return(
-          <Tab title={value} index={index} activeIndex={activeTab} OnClick={()=>onClick(index)} />
+          <Tab tabData={value} index={index} key={index} activeIndex={activeTab} OnClick={()=>onClick(index)} />
             )
           })
         }

@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 
 type ShopInterfaceCardProps={
     imagePath:string[];
@@ -10,6 +11,8 @@ type ShopInterfaceCardProps={
 export default function ShopInterfaceCard({imagePath,title,onClick=()=>{}}:ShopInterfaceCardProps):JSX.Element {
 const [activeTab, setActiveTab] = useState(0)
   return (
+    <Link to={`/shop_interface/${title}`}>
+    
     <div className="shop-interface-card" onClick={onClick}>
          <div className="card-inner-wrapper">
              <div className="heading">{title}</div>
@@ -44,6 +47,7 @@ const [activeTab, setActiveTab] = useState(0)
              }
          </div>
     </div>
+    </Link>
   )
 }
 

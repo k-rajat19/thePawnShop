@@ -7,7 +7,7 @@ import AuctionMachine from '../../../components/AuctionMachine'
 import NavBar from '../../../components/NavBar'
 import AuctionModal from '../../../components/AuctionModal'
 
-export default function AuctionHousePortal() {
+export default function HottestAuction() {
   return (
     <div className="auction-house-portal">
          <NavBar chest={true}/>

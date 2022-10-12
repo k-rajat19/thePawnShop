@@ -6,6 +6,7 @@ import MainMenu from '../MainMenu';
 
 
 
+
 export default function Loading():JSX.Element{
 
   const [progress, setProgress] = useState<number>(1);
@@ -13,7 +14,10 @@ export default function Loading():JSX.Element{
   const [showMainMenu, setShowMainMenu] = useState<boolean>(false);
 
   useEffect(() => {
-   setInterval(()=>setProgress(progress+99),1000);
+    const intervalId = setInterval(()=>setProgress(progress+99),1000);
+   return function cleanup() {
+    clearInterval(intervalId);
+}
   }, [])
 
   // this check needed because of transition timing of width in <ProgressBar/> which is 1s
@@ -21,10 +25,11 @@ export default function Loading():JSX.Element{
 
   
  if (showMainMenu){
-  return(
-     <MainMenu/>
-    
+  return (
+    <MainMenu/>
   )
+    
+  
  }
  else if (showText){
      return(

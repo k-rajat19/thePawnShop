@@ -15,7 +15,7 @@ export default function NavBar({chest=false}:NavBarProps) {
             <div className="user-info">
             <div className="credits navbar-badge">
                <div className="image-container">
-              <img src="credit.svg" alt="" />
+              <img src="/credit.svg" alt="" />
               <span>Red$ :</span>
                </div>
                <div className="value">2,000.0</div>
@@ -27,7 +27,7 @@ export default function NavBar({chest=false}:NavBarProps) {
             {
                chest&&
             <div className="chest-box">
-               <img src="./chest.svg" alt="" />
+               <img src="/chest.svg" alt="" />
             </div>
             }
 

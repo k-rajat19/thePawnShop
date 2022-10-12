@@ -1,5 +1,5 @@
 .buyer-machine{
- background: url('../../public/Rectangle 54.png') no-repeat  center/cover;   
+ background: url('../public/Rectangle 54.png') no-repeat  center/cover;   
  width: calc(547px/1.07);
  height: calc(925px/1.07);
 
@@ -58,7 +58,7 @@
      }
     .collection{
         // actually we need an image along with question logo here, 
-        background: url('../../public/collectionbg.svg') no-repeat center ;
+        background: url('../public/collectionbg.svg') no-repeat center ;
         height: 131px;
         width: 131px;
         display: flex;

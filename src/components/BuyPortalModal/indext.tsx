@@ -25,7 +25,7 @@ export default function BuyPortalModal() {
     <div className="buy-portal-modal">
         <div className="inner-wrapper">
         <div className="close-section">
-            <img src="./close.png" alt="" />
+            <img src="/close.png" alt="" />
 
         </div>
         <div className="nft-details-container">

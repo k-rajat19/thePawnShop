@@ -13,14 +13,14 @@ export default function ActivityDropDown() {
     <div className="activity-dropdown" onClick={()=>setclicked(true)}>
          <div className="dropdown-inner-wrapper">
              <span className='heading'>Click to see Activity</span>
-             <img src="./downarrow.svg" className='down-arrow' alt="" />
+             <img src="/downarrow.svg" className='down-arrow' alt="" />
          </div>    
     </div>:
     <div className="dropdown-items-container" onClick={()=>setclicked(false)}>
         <div className="inner-wrapper">
         <div className="heading-container">
         <div className="heading">Click to Hide Activity</div>
-         <img src="./uparrow.svg" className='up-arrow' alt="" />
+         <img src="/uparrow.svg" className='up-arrow' alt="" />
         </div>
        <TwistedBorder/>
        <div className="items-wrapper">

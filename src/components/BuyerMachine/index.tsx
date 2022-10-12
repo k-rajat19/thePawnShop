@@ -86,9 +86,9 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
             <div className="selector">
                 <TwistedBorder/>
                 <div className="selector-inner-wrapper">                    
-                    <Button childern={<img src="./btnarrowleft.svg" alt="" />} styles={SelectorButtonStyles} OnClick={()=>setShowNfts(-1)}/>
+                    <Button childern={<img src="/btnarrowleft.svg" alt="" />} styles={SelectorButtonStyles} OnClick={()=>setShowNfts(-1)}/>
                      <div className="btn-text">Buy</div>
-                    <Button childern={<img src="./btnarrowright.svg" alt="" />} styles={SelectorButtonStyles} OnClick={()=>setShowNfts(selectedCollection)}/>
+                    <Button childern={<img src="/btnarrowright.svg" alt="" />} styles={SelectorButtonStyles} OnClick={()=>setShowNfts(selectedCollection)}/>
                 </div>
                 <TwistedBorder/>
             </div>
@@ -116,7 +116,7 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
                         // className should be nft.......
                         <div className="collection" key={index}>
 
-                            { collections[showNfts].Nfts.length-1<index?<img src="./question.svg" alt="" key={index} />:
+                            { collections[showNfts].Nfts.length-1<index?<img src="/question.svg" alt="" key={index} />:
                                 collections[showNfts].Nfts.map((value,collectionsindex)=>{
                                     return(
                                        index===collectionsindex?
@@ -196,7 +196,7 @@ BuyerMachine.defaultProps={
 
 function DefaultImage(){
     return(
-        <img src="../../public/Rectangle 32.png" alt="" />
+        <img src="../public/Rectangle 32.png" alt="" />
         
     )
 

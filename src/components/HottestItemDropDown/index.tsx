@@ -44,14 +44,14 @@ export default function HottestItemDropDown({items}:HottestItemDropDownProps) {
     <div className="hottest-item-dropdown" onClick={()=>setclicked(true)}>
          <div className="dropdown-inner-wrapper">
              <span className='heading'>Click to see Hottest items</span>
-             <img src="./downarrow.svg" className='down-arrow' alt="" />
+             <img src="/downarrow.svg" className='down-arrow' alt="" />
          </div>    
     </div>:
     <div className="dropdown-items-container" onClick={()=>setclicked(false)}>
         <div className="inner-wrapper">
         <div className="heading-container">
         <div className="heading">Hottest items</div>
-         <img src="./uparrow.svg" className='up-arrow' alt="" />
+         <img src="/uparrow.svg" className='up-arrow' alt="" />
         </div>
        <TwistedBorder/>
        <div className="items-container">
@@ -74,10 +74,10 @@ export default function HottestItemDropDown({items}:HottestItemDropDownProps) {
                     <span >3.30%</span>
                     
                     
-                        <img  src="./greenuparrow.svg" alt="" />
+                        <img  src="/greenuparrow.svg" alt="" />
                     
                     
-                        {/* <img src="./redarrow.svg" alt="" /> */}
+                        {/* <img src="/redarrow.svg" alt="" /> */}
                     
 
             
