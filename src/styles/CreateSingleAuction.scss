@@ -1,5 +1,5 @@
 .create-single-auction{
-    background: url("../public/Rectangle 13.png") no-repeat center center/cover;
+    background: url("../../public/Rectangle 13.png") no-repeat center center/cover;
     min-height: 100vh;
     padding: 32px 32px;
     @media(max-width:1024px){
@@ -14,7 +14,7 @@
 
 
         .create-auction-machine{
-            background: url('../public/Rectangle 5 (8).png') no-repeat center;
+            background: url('../../public/Rectangle 5 (8).png') no-repeat center;
             max-width: 1100px;
             height: 772px;
             margin: auto;
@@ -299,7 +299,7 @@ color: #515151;
 }
 
 .vertical-border{
-    background: url('../public/verticalborder.svg') no-repeat center center/cover ;
+    background: url('../../public/verticalborder.svg') no-repeat center center/cover ;
     width: 7px;
     height: 100%;
     // width: inherit;
