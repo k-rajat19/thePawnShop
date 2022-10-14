@@ -5,7 +5,6 @@
     @media(max-width:768px){
         padding: 64px 12px;
         min-height: unset;
-        height: 100vh;
 
     }
     .shop-interface-inner-wrapper{
@@ -44,15 +43,20 @@ line-height: 19px;
             
             display: flex;
             justify-content: space-between;
-           @media(max-width:768px){
+           @media(max-width:1024px){
             display: none;
            }
+        }
+        .shop-interface-card-wrapper{
+            margin-left: 20px;
+            margin-right: 20px;
+
         }
         .cards-container-mobile{
             display: none;
            
             
-            @media(max-width:768px){
+            @media(max-width:1024px){
                 display: flex;
                 justify-content: center;
             }
@@ -62,10 +66,11 @@ line-height: 19px;
             
            
             display: none;
-            @media(max-width:768px){
+            @media(max-width:1024px){
                 display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 56px;
             }
             .btn{
                 background: #1E2023;

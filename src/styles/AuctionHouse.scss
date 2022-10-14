@@ -2,13 +2,15 @@
     background: url("../../public/auctionhousebg.svg") no-repeat center center/cover;
     min-height: 100vh;
     padding: calc(126px/2);
-    @media(max-width:768px){
+    
+    @media(max-width:1024px){
         padding: 64px 12px;
         min-height: unset;
-        height: 100vh;
+        
 
     }
     .auction-house-inner-wrapper{
+        
         .heading-container{
             
             text-align: center;
@@ -45,7 +47,7 @@ line-height: 19px;
             display: flex;
             justify-content: space-between;
             
-           @media(max-width:768px){
+           @media(max-width:1024px){
             display: none;
            }
         }
@@ -57,7 +59,7 @@ line-height: 19px;
             display: none;
            
             
-            @media(max-width:768px){
+            @media(max-width:1024px){
                 display: flex;
                 justify-content: center;
             }
@@ -67,10 +69,12 @@ line-height: 19px;
             
            
             display: none;
-            @media(max-width:768px){
+            
+            @media(max-width:1024px){
                 display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 56px;
             }
             .btn{
                 background: #1E2023;

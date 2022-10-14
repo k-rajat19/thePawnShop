@@ -17,7 +17,10 @@ export default function ShopInterface() {
             </div>
             <div className="cards-container">
               <ShopInterfaceCard imagePath={['Rectangle 24.png']} title={'Sell'} onClick={()=>setActiveCard('Sell')}/>
+              <div className="shop-interface-card-wrapper">
               <ShopInterfaceCard imagePath={['Rectangle 25.png','Rectangle 25.png']} title={'Buy'} onClick={()=>setActiveCard('Buy')}/>
+
+              </div>
               <ShopInterfaceCard imagePath={['Rectangle 26.png']} title={'Earn'} onClick={()=>setActiveCard('Earn')}/>
             </div>
             <div className="cards-container-mobile">

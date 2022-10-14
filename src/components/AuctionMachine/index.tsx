@@ -137,6 +137,11 @@ export default function AuctionMachine({collections}:BuyerMachineProps):JSX.Elem
                     </div>
                     <Button childern={'Bid'}  styles={BidButtonStyles}/>
                 </div>
+                {/* <div className="border-mobile-wrapper">
+
+                <TwistedBorder/>
+                </div> */}
+                
                 <div className="right-section">
                     <div className="price">
                         <span>Starting price <img src="/blackwarnlogo.svg" alt="" /></span>

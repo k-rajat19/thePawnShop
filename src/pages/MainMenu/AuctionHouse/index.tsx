@@ -32,7 +32,7 @@ export default function AuctionHouse() {
               <AuctionCard imagePath={'Rectangle 24 (1).png'} title={'Hottest Auctions'}  para={'Click here to see the hottest Nft auctions , Hurry up'}/></Link>
               :showmobileCard===1? 
               <Link to={'/auction_house/create_collection_auction'}>
-              <AuctionCard imagePath={'Rectangle 25 (2).png'} title={'Create collection'} para={'Click here to create an auction-model NFT collection'}/>   </Link>:
+              <AuctionCard imagePath={'Rectangle 25 (2).png'} title={'Create collection'} para={'Click here to create an auction-model NFT collection'} icon={'/plus.svg'}/>   </Link>:
               <Link to={'/auction_house/create_single_auction'}>
               <AuctionCard imagePath={'Rectangle 25 (3).png'} title={'Single Auctions'} para={'Click here to  open Your wallet and list an item for auctions'}/>
               </Link>

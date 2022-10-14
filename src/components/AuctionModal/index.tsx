@@ -67,7 +67,10 @@ export default function AuctionModal() {
     <div className="auction-modal">
         <div className="inner-wrapper">
         <div className="close-section">
+          
             <img src="/close.png" alt="" />
+
+          
 
         </div>
         <div className="nft-details-container">
@@ -101,7 +104,7 @@ export default function AuctionModal() {
             <TwistedBorder/>{
               timeUp? <Button childern={'Mint'} styles={BidButtonStyles}/>:
               <>
-              <Button childern={'Enter bid amount'} styles={AmountButtonStyles}/>
+              <input type="text" placeholder='Enter bid amount' className='bid-amount-input'/>
               <Button childern={'Place a bid'} styles={BidButtonStyles}/>
               <Button childern={'You cannot mint until timer up'} styles={MintButtonStyles}/>
               </>

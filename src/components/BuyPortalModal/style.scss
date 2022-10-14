@@ -6,7 +6,7 @@
        padding: 35px;
        @media(max-width:600px){
         width: 350px;
-        padding: 10px;
+        padding: 20px;
         
      }
 .inner-wrapper{ 
@@ -17,6 +17,15 @@
      justify-content: flex-end;
      cursor: pointer;
      margin-bottom: 16px;
+       
+     @media(max-width: 768px){
+          
+        img{
+            width: 24px;
+            height: 24px;
+        }
+
+    }
     }
     .nft-details-container{
         
