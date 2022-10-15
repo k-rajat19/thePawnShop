@@ -21,6 +21,9 @@
     color: #8C8C8C;
     margin-bottom: 16px;
     text-align: center;
+    @media(max-width:768px){
+        font-size: 18px;
+    }
  }
  .selector{
     
@@ -40,6 +43,9 @@
     line-height: 33px;
     color: #FFFFFF;
     margin:0px 24px;
+    @media(max-width:768px){
+        font-size: 18px;
+    }
 }
     }
  }
@@ -100,27 +106,49 @@ max-width: 100%;
          display: flex;
          justify-content: space-between;
          align-items: center;
-         padding: 10px 0px;
+         padding: 32px 0px;
         .left-section{
             :nth-child(1){
                 font-size: 24px;
                 line-height: 33px;
                 color: #FFFFFF;
+                @media(max-width:768px){
+                    font-size: 18px;
+                }
                 
             }
             :nth-child(2){
                 font-size: 16px;
 line-height: 22px;
 color: #8C8C8C;
+@media(max-width:768px){
+    font-size: 14px;
+}
 
             }
 
     
         }
+        .right-section{
+            .button{
+                width: 145px;
+                height: 47px;
+                font-size: 18px;
+line-height: 25px;
+color: #000000;
+
+            }
+            .stake-btn{
+                border: 1px solid rgba(255, 255, 255, 1);
+                background: transparent;
+                color: white;
+                margin-top: 16px;
+            }
+        }
     }
  }
  .bottom{
-    
+    margin-bottom: 35px;
     .inner-wrapper{
         
         display: flex;
@@ -130,7 +158,9 @@ color: #8C8C8C;
             font-size: 24px;
 line-height: 33px;
 color: #FFFFFF;
-
+@media(max-width:768px){
+    font-size: 18px;
+}
 
         }
         :nth-child(2){
@@ -138,6 +168,9 @@ color: #FFFFFF;
             line-height: 33px;
             text-align: right;
             color: #FFFFFF;
+            @media(max-width:768px){
+                font-size: 18px;
+            }
         }
     }
  }

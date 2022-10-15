@@ -1,10 +1,11 @@
 .auction-modal{
     background: url('../../public/Rectangle 56.png') no-repeat center/cover;
     
-       max-width: 547px;
-       max-height: 494px;
+       width: 547px;
+       max-height: 680px;
        padding: 35px;
        @media(max-width:600px){
+        width: unset;
         min-width: 350px;
         min-height: 567px;
         padding: 20px;
@@ -41,13 +42,20 @@
                 line-height: 44px;
                 font-size: 32px;
                 color: white;
+                @media(max-width: 768px){
+                    font-size: 24px;
+                    line-height: 33px;
+                }
             }
             span{
                 font-size: 32px;
 line-height: 44px;
 
 color: #FFFFFF;
-
+@media(max-width: 768px){
+    font-size: 24px;
+    line-height: 33px;
+}
             }
         }
         .heading{
@@ -56,6 +64,10 @@ color: #FFFFFF;
             color: #8C8C8C;
             text-align: center;
             margin-bottom: 16px;
+            @media(max-width: 768px){
+                font-size: 12px;
+                line-height: 16.5px;
+            }
         }
         .nft-container{
         
@@ -75,6 +87,9 @@ color: #FFFFFF;
     
     
     color: #8C8C8C;
+    @media(max-width: 768px){
+        font-size: 12px;
+    }
             }
             .item-2{
                 font-size: 16px;
@@ -83,6 +98,9 @@ line-height: 22px;
 
 
 color: #FFFFFF;
+@media(max-width: 768px){
+    font-size: 12px;
+}
             }
 
          }
@@ -98,6 +116,9 @@ line-height: 22px;
 color: #4652C1;
 display: flex;
 align-items: center;
+@media(max-width: 768px){
+    font-size: 12px;
+}
 img{
     margin-left: 3px;
 }
@@ -110,6 +131,9 @@ color: #21FF5F;
 background: #262323;
 border-radius: 24px;
 padding: 12px 16px 12px 16px;
+@media(max-width: 768px){
+    font-size: 12px;
+}
             }
          }
 
@@ -134,26 +158,34 @@ text-align: center;
 color: #515151;
 }
         }
-//         .pricing-section{
-            
-//          .price{
-//   display: flex;
-//   justify-content: space-between;
-//   font-size: 16px;
-// line-height: 22px;
-// color: #8C8C8C;
-// margin-bottom: 8px;
-// margin-top: 8px;
-//          }  
-//          .total{
-//             display: flex;
-//             justify-content: space-between;
-//             font-size: 24px;
-// line-height: 33px;
-// color: #FFFFFF;
-// margin-bottom: 8px;
-//          } 
-//         }
+   .bid-btn{
+    width:100%;
+    height: 47px;
+    background: white;
+    color:#515151;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 20px;
+    @media(max-width: 768px){
+        font-size: 12px;
+        height: 32px;
+    }
+   }
+   .mint-btn{
+    width:100%;
+    height: 47px;
+    background: #1F1F1F;
+    color:#474747;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 20px;
+    @media(max-width: 768px){
+        font-size: 12px;
+        height: 32px;
+    }
+
+
+   }
     }
 }
 }
@@ -188,11 +220,17 @@ color: #515151;
             font-size: 16px;
             line-height: 22px;
             color: #FFFFFF;
+            @media(max-width: 768px){
+                font-size: 12px;
+            }
          }
          :nth-child(2){
             font-size: 16px;
             line-height: 22px;
             color: #8C8C8C;
+            @media(max-width: 768px){
+                font-size: 12px;
+            }
          }
         }
     }

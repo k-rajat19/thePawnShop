@@ -8,7 +8,7 @@
   position: relative;
   padding-left: 40px;
   padding-right: 10px;
-  @media(max-width:768px){
+  @media(max-width:1024px){
     min-height: 332px;
     width: 347px;
   }
@@ -16,8 +16,16 @@
     position: absolute;
     top: 48px;
     left: 40px;
-    @media(max-width:768px){
+    @media(max-width:1024px){
       top: -89px;
+    }
+    .button{
+      @media(max-width:1024px){
+        width: 256px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
   }
 
@@ -34,7 +42,7 @@ display: flex;
 align-items: center;
 cursor: pointer;
 margin-bottom: 64px;
-@media(max-width:768px){
+@media(max-width:1024px){
   font-size: 18px;
 line-height: 25px;
 margin-bottom: 24px;
@@ -43,7 +51,7 @@ margin-bottom: 24px;
     width: 16px;
     height: 34px;
     margin-right: 17px;
-    @media(max-width:768px){
+    @media(max-width:1024px){
       width: 8px;
       height: 16px;
       margin-right: 9px;

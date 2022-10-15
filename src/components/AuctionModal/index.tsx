@@ -20,38 +20,7 @@ const BidButtonStyles:React.CSSProperties={
   marginTop:'20px'
 
 }
-const AmountButtonStyles:React.CSSProperties={
-  width:'100%',
-  height:'47px',
-  backgroundColor:'#000000;',
-  border:'1px solid rgba(53, 53, 53, 1)',
-  color:'#515151',
-  fontSize:'14px',
-  outline:'none',
-  cursor:'pointer',
-  display:'flex',
-  alignItems:'center',
-  justifyContent:'center',
-  borderRadius:'4px',
-  marginTop:'20px'
 
-}
-const MintButtonStyles:React.CSSProperties={
-  width:'100%',
-  height:'47px',
-  backgroundColor:'#1F1F1F',
-  border:'none',
-  color:'#474747',
-  fontSize:'18px',
-  outline:'none',
-  cursor:'pointer',
-  display:'flex',
-  alignItems:'center',
-  justifyContent:'center',
-  borderRadius:'4px',
-  marginTop:'20px'
-
-}
 
 export default function AuctionModal() {
   const [timeUp, setTimeUp] = useState(false);
@@ -105,8 +74,8 @@ export default function AuctionModal() {
               timeUp? <Button childern={'Mint'} styles={BidButtonStyles}/>:
               <>
               <input type="text" placeholder='Enter bid amount' className='bid-amount-input'/>
-              <Button childern={'Place a bid'} styles={BidButtonStyles}/>
-              <Button childern={'You cannot mint until timer up'} styles={MintButtonStyles}/>
+              <Button childern={'Place a bid'} className={'bid-btn'} />
+              <Button childern={'You cannot mint until timer up'} className={'mint-btn'}/>
               </>
             }
             

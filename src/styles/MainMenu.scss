@@ -2,7 +2,7 @@
     background: url("../../public/Rectangle2.png") no-repeat center center/cover;
     min-height: 160vh;
     padding: 0 40px;
-    @media(max-width:768px){
+    @media(max-width:1024px){
         min-height: unset;
         // max-height: 120vh;
         padding-bottom: 128px;
@@ -13,13 +13,13 @@
         min-height: inherit;
         display: flex;
     justify-content: space-between;
-    @media(max-width:768px){
+    @media(max-width:1024px){
         flex-direction: column;
         align-items: center;
     }
     .side-bar-wrapper{
         min-height: inherit;
-        @media(max-width:768px){
+        @media(max-width:1024px){
             order: 1;
         }
     }
@@ -35,8 +35,8 @@
 
         .pawn-shop-card{
             background: url('../../public/Rectangle 21.png') no-repeat center  center/cover;
-            min-width: 328px;
-            min-height: 244px;
+            width: 328px;
+        height: 244px;
             
             display: flex;
             justify-content: center;
@@ -52,13 +52,13 @@ width: 80%;
 
 
 text-shadow: -19px 22px 0px rgba(0, 0, 0, 0.6);
-@media(max-width:768px){
+@media(max-width:1024px){
     font-size: 32px;
 line-height: 32px;
 }
 
             }
-            @media(max-width:768px){
+            @media(max-width:1024px){
                 order: 0;
                 margin-bottom: 170px;
                 min-width: 246px;
@@ -66,7 +66,7 @@ line-height: 32px;
             }
         }
         .main-menu-card-container{
-         @media(max-width:768px)   {
+         @media(max-width:1024px)   {
             display: none;
          }
         }

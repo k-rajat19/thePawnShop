@@ -18,6 +18,10 @@
            font-size: 24px;
    line-height: 33px;
    color: #8C8C8C;
+   @media(max-width:768px){
+    font-size: 16px;
+    line-height: 22px;
+   }
    
    
        }
@@ -52,6 +56,11 @@
                font-size: 24px;
        line-height: 33px;
        color: #8C8C8C;
+       @media(max-width:768px){
+        font-size: 16px;
+        line-height: 22px;
+       }
+       
        
        
            }

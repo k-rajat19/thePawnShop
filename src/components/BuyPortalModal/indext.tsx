@@ -3,22 +3,7 @@ import Button from '../Button'
 import TwistedBorder from '../TwistedBorder'
 import SelectedNFT from './SelectedNFT'
 
-const BuyButtonStyles:React.CSSProperties={
-  width:'100%',
-  height:'32px',
-  backgroundColor:'#FFFFFF',
-  border:'none',
-  color:'#000000',
-  fontSize:'18px',
-  outline:'none',
-  cursor:'pointer',
-  display:'flex',
-  alignItems:'center',
-  justifyContent:'center',
-  borderRadius:'4px',
-  marginTop:'20px'
 
-}
 
 export default function BuyPortalModal() {
   return (
@@ -46,7 +31,7 @@ export default function BuyPortalModal() {
               </div>
               <TwistedBorder/>
             </div>
-            <Button childern={'Buy'} styles={BuyButtonStyles}/>
+            <Button childern={'Buy'} className={'buy-btn'}/>
         </div>
 
         </div>

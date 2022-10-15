@@ -331,6 +331,11 @@ color: #515151;
       
       
       color: #FFFFFF;
+      @media(max-width: 768px){
+        font-size: 16px;
+        line-height: 22px;
+        
+      }
       
   }
   :nth-child(2){
@@ -340,6 +345,10 @@ color: #515151;
       
       
       color: #8C8C8C;
+      @media(max-width: 768px){
+        font-size: 12px;
+        line-height: 16px;
+      }
   }
                 }
                 .title-container{
@@ -354,6 +363,10 @@ color: #515151;
                       font-size: 24px;
                       line-height: 33px;
                       color: #FFFFFF;
+                      @media(max-width: 768px){
+                        font-size: 16px;
+                        line-height: 22px;
+                      }
                   }
                 }
                .upload-section{
@@ -394,6 +407,10 @@ color: #515151;
   
   color: #FFFFFF;
   margin-bottom: 8px;
+  @media(max-width: 768px){
+    font-size: 16px;
+    line-height: 22px;
+  }
   
   
       }
@@ -403,6 +420,10 @@ color: #515151;
           text-align: center;
           
           color: #8C8C8C;
+          @media(max-width: 768px){
+            font-size: 12px;
+            
+          }
       }
   }
                }
@@ -411,6 +432,28 @@ color: #515151;
                 justify-content: space-between;
                 margin-top: 16px;
                 margin-bottom: 54px;
+                .back-btn{
+                       
+
+                    height:32px;
+                    width: 96px;
+                    background: transparent;
+                    border:1px solid rgba(255, 255, 255, 1);
+                    color: white;
+                    font-size: 12px;
+                    
+                  
+                                      }
+                                      .next-btn{
+                                          height:32px;
+                                          width: 96px;
+                                          background: white;
+                                          color: black;
+                                          font-size: 18px;
+                                          @media(max-width: 768px){
+                                              font-size: 12px;
+                                          }
+                                      }
             }
               }
               .create-section{
@@ -421,6 +464,10 @@ color: #515151;
                 min-height: 800px;
                 padding: 40px;
                 background: url('../../public/Rectangle 5 (9).png') no-repeat center center/cover;
+                @media(max-width:768px){
+                    padding: 10px;
+
+                }
                 .heading-container{
                     display: flex;
                     flex-direction: column;
@@ -435,6 +482,12 @@ color: #515151;
         
         
         color: #FFFFFF;
+        @media(max-width: 768px){
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
         
     }
     :nth-child(2){
@@ -444,6 +497,10 @@ color: #515151;
         
         
         color: #8C8C8C;
+        @media(max-width: 768px){
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
                   }
                 .connected-wallet-section{
@@ -455,6 +512,9 @@ color: #515151;
                         line-height: 19px;
                         
                         color: #515151;
+                        @media(max-width:768px){
+                            font-size: 12px;
+                        }
                         
                         
                     }
@@ -484,6 +544,9 @@ color: #515151;
                                 
                                 
                                 color: #FFFFFF;
+                                @media(max-width:768px){
+                                    font-size: 14px;
+                                }
                                 
                             }
                             :nth-child(2){
@@ -493,6 +556,9 @@ color: #515151;
                                 
                                 
                                 color: #515151;
+                                @media(max-width:768px){
+                                    font-size: 12px;
+                                }
                             }
 
                         }
@@ -511,6 +577,9 @@ line-height: 19px;
 
 color: #515151;
 margin-bottom: 8px;
+@media(max-width:768px){
+    font-size: 12px;
+}
 
 
                     }
@@ -520,6 +589,9 @@ margin-bottom: 8px;
                         outline: none;
                         font-size: 14px;
 line-height: 19px;
+@media(max-width:768px){
+    font-size: 12px;
+}
                     }
                     #price{
                         background: #000000;
@@ -543,6 +615,9 @@ line-height: 19px;
                         line-height: 19px;
                         border: 1px solid rgba(61, 61, 61, 1);
                         margin-bottom: 24px;
+                        @media(max-width:768px){
+                            font-size: 12px;
+                        }
                         &::placeholder{
                             font-size: 14px;
                             text-align: center;
@@ -552,6 +627,9 @@ line-height: 19px;
 line-height: 19px;
 
 color: #515151;
+@media(max-width:768px){
+    font-size: 12px;
+}
 
                         }
                     }
@@ -567,6 +645,9 @@ line-height: 19px;
 
 color: #515151;
 margin-bottom: 8px;
+@media(max-width:768px){
+    font-size: 12px;
+}
 
                         }
                         .time-container{
@@ -586,6 +667,9 @@ line-height: 19px;
 
 color: #515151;
 margin-right: 8px;
+@media(max-width:768px){
+    font-size: 12px;
+}
                             }
                             .active{
                                 background: #FFFFFF;
@@ -603,6 +687,19 @@ color: #515151;
 }
                             }
                         }
+                    }
+                    .create-btn{
+                        
+                        height:47px;
+                        width: 100%;
+                        background: white;
+                        color: black;
+                        font-size: 18px;
+                        @media(max-width:768px){
+                            height: 32px;
+                            font-size: 12px;
+                        }
+
                     }
                 }
                 .btn-container{

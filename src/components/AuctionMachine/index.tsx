@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Button from '../Button'
-import {SelectorButtonStyles,BidButtonStyles,StakeButtonStyles} from './ButtonStyles'
+import {SelectorButtonStyles} from './ButtonStyles'
 import TwistedBorder from '../TwistedBorder'
 
 type Collection={
@@ -135,7 +135,7 @@ export default function AuctionMachine({collections}:BuyerMachineProps):JSX.Elem
                    <div>Iamacollection</div>
 
                     </div>
-                    <Button childern={'Bid'}  styles={BidButtonStyles}/>
+                    <Button childern={'Bid'}  className={'bid-button'}/>
                 </div>
                 {/* <div className="border-mobile-wrapper">
 

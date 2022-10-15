@@ -154,7 +154,7 @@ export default function CreateCollectionAuction() {
                <label htmlFor="textarea">Description</label>
                <textarea name="" id="textarea" placeholder='Please drop a brief description'/>
                
-               <Button childern={'Create Auction'} styles={CreateAuctionBtnStyle}/>
+               <Button childern={'Create Auction'} className={'create-btn'}/>
              </form>
              <div className="btn-container">
              <Button childern={'Back'} styles={BackButtonStyle} OnClick={()=>setshowForm(false)}/>
@@ -182,8 +182,8 @@ export default function CreateCollectionAuction() {
           </div>
           <TwistedBorder/>
           <div className="btn-container">
-              <Button childern={'Back'} styles={BackButtonStyle}/>
-              <Button childern={'Next'} styles={NextButtonStyle} OnClick={()=>setshowForm(true)}/>
+          <Button childern={'Back'} className={'back-btn'} />
+              <Button childern={'Next'} className={'next-btn'}  OnClick={()=>setshowForm(true)}/>
             </div>
 
           </div>

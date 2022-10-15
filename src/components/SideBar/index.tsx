@@ -19,7 +19,7 @@ const TabData=[{
   link:'/auction_house'
 },
 {
-  title:"What is the pawn shop ?",
+  title:"What is the pawn shop?",
   link:''
 },
 {
@@ -31,6 +31,8 @@ const TabData=[{
 type SideBarProps={
   setTab:React.Dispatch<React.SetStateAction<number|null>>
 }
+
+
 
 export default function SideBar({setTab}:SideBarProps):JSX.Element {
 

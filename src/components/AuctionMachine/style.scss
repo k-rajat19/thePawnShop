@@ -20,6 +20,10 @@
        color: #000000;
        margin-bottom: 16px;
        text-align: center;
+       @media(max-width: 768px){
+        font-size: 16.0028px;
+line-height: 22px;
+       }
     }
     .selector{
        
@@ -39,6 +43,10 @@
        line-height: 33px;
        color: #000000;
        margin:0px 24px;
+       @media(max-width: 768px){
+        font-size: 16.0028px;
+line-height: 22px;
+       }
    }
        }
     }
@@ -123,15 +131,36 @@
                     font-size: 24px;
                     line-height: 33px;
                     color: black;
+                    @media(max-width: 768px){
+                        font-size: 16.0028px;
+                line-height: 22px;
+                       }
                     
                 }
                 :nth-child(2){
                     font-size: 16px;
     line-height: 22px;
     color: black;
+    @media(max-width: 768px){
+        font-size: 12px;
+line-height: 16px;
+       }
     
                 }
 
+            }
+            .bid-button{
+                width:144px;
+                height: 47px;
+                background-color: black;
+                color: white;
+                font-size: 18px;
+                border-radius: 4px;
+                @media(max-width: 768px){
+                    width: 96px;
+                    height: 32px;
+                    font-size: 12px;
+                }
             }
    
        
@@ -159,6 +188,10 @@
                 margin-bottom: 22px;
 line-height: 22px;
 color: #000000;
+@media(max-width: 768px){
+    font-size: 14px;
+line-height: 19px;
+   }
 span{
     align-items: center;
     display: flex;
@@ -172,6 +205,10 @@ span{
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 16px;
+                @media(max-width: 768px){
+                    font-size: 14px;
+                line-height: 19px;
+                   }
                 span{
                     align-items: center;
                     display: flex;
@@ -185,6 +222,10 @@ span{
                 align-items: center;
                 justify-content: space-between;
                 height: 59px;
+                @media(max-width: 768px){
+                    font-size: 14px;
+                line-height: 19px;
+                   }
                 span{
                     align-items: center;
                     display: flex;
@@ -199,26 +240,26 @@ span{
            }
        }
     }
-    .bottom{
+//     .bottom{
        
-       .inner-wrapper{
+//        .inner-wrapper{
            
-           display: flex;
-           align-items: center;
-           justify-content:space-between;
-           :nth-child(1){
-               font-size: 24px;
-   line-height: 33px;
-   color: #FFFFFF;
+//            display: flex;
+//            align-items: center;
+//            justify-content:space-between;
+//            :nth-child(1){
+//                font-size: 24px;
+//    line-height: 33px;
+//    color: #FFFFFF;
    
    
-           }
-           :nth-child(2){
-               font-size: 24px;
-               line-height: 33px;
-               text-align: right;
-               color: #FFFFFF;
-           }
-       }
-    }
+//            }
+//            :nth-child(2){
+//                font-size: 24px;
+//                line-height: 33px;
+//                text-align: right;
+//                color: #FFFFFF;
+//            }
+//        }
+//     }
    }

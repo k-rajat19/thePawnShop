@@ -47,7 +47,7 @@ export default function HottestItemDropDown({items}:HottestItemDropDownProps) {
              <img src="/downarrow.svg" className='down-arrow' alt="" />
          </div>    
     </div>:
-    <div className="dropdown-items-container" onClick={()=>setclicked(false)}>
+    <div className="activity-dropdown-items-container" onClick={()=>setclicked(false)}>
         <div className="inner-wrapper">
         <div className="heading-container">
         <div className="heading">Hottest items</div>

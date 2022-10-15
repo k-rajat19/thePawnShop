@@ -146,8 +146,8 @@ export default function BuyerMachine({collections}:BuyerMachineProps):JSX.Elemen
                    <div>Iamacollection</div>
                 </div>
                 <div className="right-section">
-                    <Button childern={'Buy'}  styles={BuyButtonStyles}/>
-                    <Button childern={'Stake'} styles={StakeButtonStyles}/>
+                    <Button childern={'Buy'} className={'buy-btn'}  />
+                    <Button childern={'Stake'} className={'stake-btn'}/>
                 </div>
                 </div>
                 <TwistedBorder/>

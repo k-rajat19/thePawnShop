@@ -4,33 +4,16 @@ declare interface ButtonProps{
     
         childern?:React.ReactNode;
         styles?:React.CSSProperties;
+        className?:string
         OnClick?:React.MouseEventHandler
     
 }
-//ToDo: Manage styles for mobile devices
-export default function Button({childern,styles,OnClick=()=>{}}:ButtonProps) {   
+export default function Button({childern,className,styles,OnClick=()=>{}}:ButtonProps) {   
 
   
   return (
-     <div className="button" style={styles} onClick={OnClick}>
+     <div className={`button ${className}`} style={styles} onClick={OnClick}>
      {childern}
      </div>
   )
-}
-
-Button.defaultProps ={
-    styles:{
-        height:'64px',
-        width:'290px',
-        backgroundColor:'#FFFFFF',
-        border:'none',
-        color:'#000000',
-        fontSize:'24px',
-        outline:'none',
-        cursor:'pointer',
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center'
-        
-    }
 }

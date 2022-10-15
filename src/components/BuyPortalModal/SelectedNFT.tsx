@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SelectedNFT() {
   return (
-    <div className="selected-nft">
+    <div className="buy-selected-nft">
      <div className="nft-info">
          <div className="image-container"></div>
        <div className="other">
