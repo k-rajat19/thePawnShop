@@ -1,76 +1,71 @@
-.main-menu-container{
-    background: url("../../public/Rectangle2.png") no-repeat center center/cover;
-    min-height: 160vh;
-    padding: 0 40px;
-    @media(max-width:1024px){
-        min-height: unset;
-        // max-height: 120vh;
-        padding-bottom: 128px;
-    }
-    
-    .main-menu-inner-wrapper{
-        
-        min-height: inherit;
-        display: flex;
+.main-menu-container {
+  background: url('../../public/Rectangle2.png') no-repeat center center/cover;
+  min-height: 160vh;
+  padding: 0 40px;
+  @media (max-width: 1024px) {
+    min-height: unset;
+    // max-height: 120vh;
+    padding-bottom: 128px;
+  }
+
+  .main-menu-inner-wrapper {
+    min-height: inherit;
+    display: flex;
     justify-content: space-between;
-    @media(max-width:1024px){
-        flex-direction: column;
-        align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
     }
-    .side-bar-wrapper{
-        min-height: inherit;
-        @media(max-width:1024px){
-            order: 1;
-        }
+    .side-bar-wrapper {
+      min-height: inherit;
+      @media (max-width: 1024px) {
+        order: 1;
+      }
     }
-    .card-wrapper{
-       
-        display: flex;
-        flex-direction: column;
-        
-        
-        align-items: flex-end;
-        
-        margin-top: 48px;
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
 
-        .pawn-shop-card{
-            background: url('../../public/Rectangle 21.png') no-repeat center  center/cover;
-            width: 328px;
+      align-items: flex-end;
+
+      margin-top: 48px;
+
+      .pawn-shop-card {
+        background: url('../../public/Rectangle 21.png') no-repeat center
+          center/cover;
+        width: 328px;
         height: 244px;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            div{
-                font-size: 56px;
-line-height: 56px;
 
-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-width: 80%;
+        div {
+          font-size: 56px;
+          line-height: 56px;
 
+          color: #ffffff;
 
-text-shadow: -19px 22px 0px rgba(0, 0, 0, 0.6);
-@media(max-width:1024px){
-    font-size: 32px;
-line-height: 32px;
-}
+          width: 80%;
 
-            }
-            @media(max-width:1024px){
-                order: 0;
-                margin-bottom: 170px;
-                min-width: 246px;
-                min-height: 249px;
-            }
+          text-shadow: -19px 22px 0px rgba(0, 0, 0, 0.6);
+          @media (max-width: 1024px) {
+            font-size: 32px;
+            line-height: 32px;
+          }
         }
-        .main-menu-card-container{
-         @media(max-width:1024px)   {
-            display: none;
-         }
+        @media (max-width: 1024px) {
+          order: 0;
+          margin-bottom: 170px;
+          min-width: 246px;
+          min-height: 249px;
         }
+      }
+      .main-menu-card-container {
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
     }
-        
-    }
+  }
 }
