@@ -1,26 +1,26 @@
-.side-bar{
-  max-width: 569px;   
+.side-bar {
+  max-width: 569px;
   background: rgba(17, 17, 17, 0.8);
-  
+
   min-height: inherit;
   display: flex;
   align-items: center;
   position: relative;
   padding-left: 40px;
   padding-right: 10px;
-  @media(max-width:1024px){
+  @media (max-width: 1024px) {
     min-height: 332px;
     width: 347px;
   }
-  .btn-container{
+  .btn-container {
     position: absolute;
     top: 48px;
     left: 40px;
-    @media(max-width:1024px){
+    @media (max-width: 1024px) {
       top: -89px;
     }
-    .button{
-      @media(max-width:1024px){
+    .button {
+      @media (max-width: 1024px) {
         width: 256px;
         height: 56px;
         font-size: 18px;
@@ -29,45 +29,43 @@
     }
   }
 
-  .side-bar-tabs-container{
-       width: 100%;
-    .side-bar-tab{
-        font-weight: 400;
-font-size: 32px;
-line-height: 44px;
-text-transform: capitalize;
+  .side-bar-tabs-container {
+    width: 100%;
+    .side-bar-tab {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 44px;
+      text-transform: capitalize;
 
-color: #8C8C8C;
-display: flex;
-align-items: center;
-cursor: pointer;
-margin-bottom: 64px;
-@media(max-width:1024px){
-  font-size: 18px;
-line-height: 25px;
-margin-bottom: 24px;
-}
-  img{
-    width: 16px;
-    height: 34px;
-    margin-right: 17px;
-    @media(max-width:1024px){
-      width: 8px;
-      height: 16px;
-      margin-right: 9px;
+      color: #8c8c8c;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 64px;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 24px;
+      }
+      img {
+        width: 16px;
+        height: 34px;
+        margin-right: 17px;
+        @media (max-width: 1024px) {
+          width: 8px;
+          height: 16px;
+          margin-right: 9px;
+        }
+      }
+      .showArrow {
+        visibility: visible;
+      }
+      .hideArrow {
+        visibility: hidden;
+      }
     }
- }
- .showArrow{
-    visibility: visible;
- }
- .hideArrow{
-    visibility: hidden;
- }
-
-    }
-    .active{
-        color: #FFFFFF;
-
+    .active {
+      color: #ffffff;
     }
   }
 }

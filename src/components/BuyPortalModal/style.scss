@@ -1,132 +1,120 @@
-.buy-portal-modal{
-    background: url('../../public/Rectangle 56.png') no-repeat center/cover;
-    
-       width: 547px;
-       height: 494px;
-       padding: 35px;
-       @media(max-width:600px){
-        width: 350px;
-        padding: 20px;
-        
-     }
-.inner-wrapper{ 
+.buy-portal-modal {
+  background: url('../../public/Rectangle 56.png') no-repeat center/cover;
 
-    .close-section{
-    
-     display: flex;
-     justify-content: flex-end;
-     cursor: pointer;
-     margin-bottom: 16px;
-       
-     @media(max-width: 768px){
-          
-        img{
-            width: 24px;
-            height: 24px;
+  width: 547px;
+  height: 494px;
+  padding: 35px;
+  @media (max-width: 600px) {
+    width: 350px;
+    padding: 20px;
+  }
+  .inner-wrapper {
+    .close-section {
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        img {
+          width: 24px;
+          height: 24px;
         }
-
+      }
     }
-    }
-    .nft-details-container{
-        
-        .heading{
+    .nft-details-container {
+      .heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: #8c8c8c;
+        text-align: center;
+        margin-bottom: 12px;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+      .nft-container {
+        overflow-y: auto;
+        max-height: 170px;
+      }
+      .pricing-section {
+        .price {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          line-height: 22px;
+          color: #8c8c8c;
+          margin-bottom: 8px;
+          margin-top: 8px;
+          @media (max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+        .total {
+          display: flex;
+          justify-content: space-between;
+          font-size: 24px;
+          line-height: 33px;
+          color: #ffffff;
+          margin-bottom: 8px;
+          @media (max-width: 768px) {
             font-size: 16px;
-            line-height: 22px; 
-            color: #8C8C8C;
-            text-align: center;
-            margin-bottom: 12px;
-            @media(max-width:768px){
-                font-size: 12px;
-            }
+          }
         }
-        .nft-container{
-        
-         overflow-y: auto;
-         max-height: 170px;
+      }
+      .buy-btn {
+        width: 100%;
+        height: 32px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        border-radius: 4px;
+        margin-top: 20px;
+        @media (max-width: 768px) {
+          font-size: 12px;
         }
-        .pricing-section{
-            
-         .price{
+      }
+    }
+  }
+}
+.buy-selected-nft {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
-line-height: 22px;
-color: #8C8C8C;
-margin-bottom: 8px;
-margin-top: 8px;
-@media(max-width:768px){
-    font-size: 12px;
-}
-         }  
-         .total{
-            display: flex;
-            justify-content: space-between;
-            font-size: 24px;
-line-height: 33px;
-color: #FFFFFF;
-margin-bottom: 8px;
-@media(max-width:768px){
-    font-size: 16px;
-}
-         } 
-        }
-        .buy-btn{
-        
-  width:100%;
-  height: 32px;
-  background-color: white;
-  color: black;
-  font-size: 18px;
-  border-radius: 4px;
-  margin-top: 20px;
-            @media(max-width:768px){
-                font-size: 12px;
-            }
-        }
-    }
-}
-}
-.buy-selected-nft{
+  align-items: center;
+  margin-bottom: 24px;
+  .nft-info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-    .nft-info{
-        display: flex;
-    .image-container{
-        width: 56px;
-        height: 56px;
-        border: 1px solid white;
-       img{
+    .image-container {
+      width: 56px;
+      height: 56px;
+      border: 1px solid white;
+      img {
         object-fit: contain;
-        
-       }
-       svg{
+      }
+      svg {
         object-fit: contain;
-       }
-        }
-        .other{
-            display: flex;
-            flex-direction: column;
-            margin-left: 8px;
-         :nth-child(1){
-            font-size: 16px;
-            line-height: 22px;
-            color: #FFFFFF;
-            @media(max-width:768px){
-                font-size: 12px;
-            }
-         }
-         :nth-child(2){
-            font-size: 16px;
-            line-height: 22px;
-            color: #8C8C8C;
-            @media(max-width:768px){
-                font-size: 12px;
-            }
-         }
-        }
+      }
     }
-  
-
+    .other {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+      :nth-child(1) {
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+      :nth-child(2) {
+        font-size: 16px;
+        line-height: 22px;
+        color: #8c8c8c;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

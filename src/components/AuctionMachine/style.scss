@@ -1,265 +1,248 @@
-.auction-machine{
-    background: url('../../public/auctionmachinebg.svg') no-repeat  center/cover;   
-    max-width: 648px;
-    max-height: 964px;
-   
-    padding: 32px;
-    @media(max-width:768px){
-       min-width: 350px;
-       min-height: 730px;
-       
-    }
-   .auction-machine-inner-wrapper{
-       
-        overflow: hidden;
-   
-   }
-    .heading{
-       font-size: 24px;
-       line-height: 33px;   
-       color: #000000;
-       margin-bottom: 16px;
-       text-align: center;
-       @media(max-width: 768px){
-        font-size: 16.0028px;
-line-height: 22px;
-       }
-    }
-    .selector{
-       
-       display: flex;
-       justify-content: flex-end;
-       flex-direction: column;
-       
-       
-       .selector-inner-wrapper{
-           display: flex;
-           
-           justify-content: center;
-           margin: 18.6px 0px;
-          
-   .btn-text{
-       font-size: 24px;
-       line-height: 33px;
-       color: #000000;
-       margin:0px 24px;
-       @media(max-width: 768px){
-        font-size: 16.0028px;
-line-height: 22px;
-       }
-   }
-       }
-    }
-    .nfts-container{
-       
-       display: grid;
-       grid-template-columns: auto auto auto auto;
-       column-gap: 12px;
-       row-gap: 12px;
-       padding: 8px;
-       max-height: 460px;
-       overflow-y: auto;
-       align-items: center;
-       overflow-x: hidden;
-       @media(max-width:600px){
-           grid-template-columns: auto auto auto;
-           
-        }
-       .collection{
-           // actually we need an image along with question logo here, 
-           background: url('../../public/collectionbg.svg') no-repeat center center/cover;
-           height: 131px;
-           width: 131px;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           @media(max-width:768px){
-            height: 88px;
-            width: 88px;
-           }
-           .image-container{
-               height: 100px;
-               width: 100px;
-               @media(max-width:768px){
-                height: 80px;
-                width: 80px;
-               }
-               
-               img{
-   object-fit: contain;
-   max-width: 100%;
-               }
-               svg{
-   object-fit: contain;
-   max-width: 100%;
-               }
-           }
-       }
-       .collection-active{
-           
-       }
-    }
-    .buy-section{
-       
-       
-       .inner-wrapper{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            // border: 2px solid red;
-            // align-items: center;
-            // padding: 10px 0px;
-            // padding: 12px;
-            @media(max-width:768px){
-                flex-direction: column;
-            }
-           .left-section{
-            @media(max-width:768px){
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                padding-top: 16px;
-                padding-bottom: 16px;
-            }
-            .ls-inner-wrapper{
-                margin-bottom: 30px;
-                @media(max-width:768px){
-                    margin-bottom: 0px;
-                }
-                :nth-child(1){
-                    font-size: 24px;
-                    line-height: 33px;
-                    color: black;
-                    @media(max-width: 768px){
-                        font-size: 16.0028px;
-                line-height: 22px;
-                       }
-                    
-                }
-                :nth-child(2){
-                    font-size: 16px;
-    line-height: 22px;
-    color: black;
-    @media(max-width: 768px){
-        font-size: 12px;
-line-height: 16px;
-       }
-    
-                }
+.auction-machine {
+  background: url('../../public/auctionmachinebg.svg') no-repeat center/cover;
+  max-width: 648px;
+  max-height: 964px;
 
-            }
-            .bid-button{
-                width:144px;
-                height: 47px;
-                background-color: black;
-                color: white;
-                font-size: 18px;
-                border-radius: 4px;
-                @media(max-width: 768px){
-                    width: 96px;
-                    height: 32px;
-                    font-size: 12px;
-                }
-            }
-   
-       
-           }
-          
-           .right-section{
-            border-left: 2px solid rgba(31, 31, 31, 0.6);
-            // min-width: 466px;
-            padding: 12px;
-            padding-bottom: 0px;
-            padding-top: 0px;
-            // margin-left: 100px;
-            @media(max-width:768px){
-               
-                width: 100%;
-               padding: 0px;
-               border-left: none;
-            }
-            .price{
-                
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                font-size: 16px;
-                margin-bottom: 22px;
-line-height: 22px;
-color: #000000;
-@media(max-width: 768px){
-    font-size: 14px;
-line-height: 19px;
-   }
-span{
-    align-items: center;
+  padding: 32px;
+  @media (max-width: 768px) {
+    min-width: 350px;
+    min-height: 730px;
+  }
+  .auction-machine-inner-wrapper {
+    overflow: hidden;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 16px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 16.0028px;
+      line-height: 22px;
+    }
+  }
+  .selector {
     display: flex;
-    img{
-        margin-left: 5px;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    .selector-inner-wrapper {
+      display: flex;
+
+      justify-content: center;
+      margin: 18.6px 0px;
+
+      .btn-text {
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+        margin: 0px 24px;
+        @media (max-width: 768px) {
+          font-size: 16.0028px;
+          line-height: 22px;
+        }
+      }
     }
+  }
+  .nfts-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 12px;
+    row-gap: 12px;
+    padding: 8px;
+    max-height: 460px;
+    overflow-y: auto;
+    align-items: center;
+    overflow-x: hidden;
+    @media (max-width: 600px) {
+      grid-template-columns: auto auto auto;
+    }
+    .collection {
+      // actually we need an image along with question logo here,
+      background: url('../../public/collectionbg.svg') no-repeat center
+        center/cover;
+      height: 131px;
+      width: 131px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 768px) {
+        height: 88px;
+        width: 88px;
+      }
+      .image-container {
+        height: 100px;
+        width: 100px;
+        @media (max-width: 768px) {
+          height: 80px;
+          width: 80px;
+        }
+
+        img {
+          object-fit: contain;
+          max-width: 100%;
+        }
+        svg {
+          object-fit: contain;
+          max-width: 100%;
+        }
+      }
+    }
+    .collection-active {
+    }
+  }
+  .buy-section {
+    .inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // border: 2px solid red;
+      // align-items: center;
+      // padding: 10px 0px;
+      // padding: 12px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      .left-section {
+        @media (max-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+        .ls-inner-wrapper {
+          margin-bottom: 30px;
+          @media (max-width: 768px) {
+            margin-bottom: 0px;
+          }
+          :nth-child(1) {
+            font-size: 24px;
+            line-height: 33px;
+            color: black;
+            @media (max-width: 768px) {
+              font-size: 16.0028px;
+              line-height: 22px;
+            }
+          }
+          :nth-child(2) {
+            font-size: 16px;
+            line-height: 22px;
+            color: black;
+            @media (max-width: 768px) {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+        .bid-button {
+          width: 144px;
+          height: 47px;
+          background-color: black;
+          color: white;
+          font-size: 18px;
+          border-radius: 4px;
+          @media (max-width: 768px) {
+            width: 96px;
+            height: 32px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .right-section {
+        border-left: 2px solid rgba(31, 31, 31, 0.6);
+        // min-width: 466px;
+        padding: 12px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        // margin-left: 100px;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 0px;
+          border-left: none;
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 16px;
+          margin-bottom: 22px;
+          line-height: 22px;
+          color: #000000;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 19px;
+          }
+          span {
+            align-items: center;
+            display: flex;
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+        .bid {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 19px;
+          }
+          span {
+            align-items: center;
+            display: flex;
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+        .time-left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 59px;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 19px;
+          }
+          span {
+            align-items: center;
+            display: flex;
+            img {
+              margin-left: 5px;
+            }
+          }
+          :nth-child(1) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+  //     .bottom{
+
+  //        .inner-wrapper{
+
+  //            display: flex;
+  //            align-items: center;
+  //            justify-content:space-between;
+  //            :nth-child(1){
+  //                font-size: 24px;
+  //    line-height: 33px;
+  //    color: #FFFFFF;
+
+  //            }
+  //            :nth-child(2){
+  //                font-size: 24px;
+  //                line-height: 33px;
+  //                text-align: right;
+  //                color: #FFFFFF;
+  //            }
+  //        }
+  //     }
 }
-            }
-            .bid{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 16px;
-                @media(max-width: 768px){
-                    font-size: 14px;
-                line-height: 19px;
-                   }
-                span{
-                    align-items: center;
-                    display: flex;
-                    img{
-                        margin-left: 5px;
-                    }
-                }
-            }
-            .time-left{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 59px;
-                @media(max-width: 768px){
-                    font-size: 14px;
-                line-height: 19px;
-                   }
-                span{
-                    align-items: center;
-                    display: flex;
-                    img{
-                        margin-left: 5px;
-                    }
-                }
-                :nth-child(1){
-                    margin-right: 30px;
-                }
-            }
-           }
-       }
-    }
-//     .bottom{
-       
-//        .inner-wrapper{
-           
-//            display: flex;
-//            align-items: center;
-//            justify-content:space-between;
-//            :nth-child(1){
-//                font-size: 24px;
-//    line-height: 33px;
-//    color: #FFFFFF;
-   
-   
-//            }
-//            :nth-child(2){
-//                font-size: 24px;
-//                line-height: 33px;
-//                text-align: right;
-//                color: #FFFFFF;
-//            }
-//        }
-//     }
-   }

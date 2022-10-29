@@ -1,24 +1,24 @@
 import React from 'react'
 
-
-type ProgressBarProps={
-  width:String;
+type ProgressBarProps = {
+  width: String
 }
 
-export default function ProgressBar({width='1'}:ProgressBarProps):JSX.Element {
-
-    const fillerStyles = {
-        height: '100%',
-        width: `${width}%`,
-        backgroundColor:'#FFFFFF',
-        transition: 'width 2s ease-in-out',
-      }
+export default function ProgressBar({
+  width = '1',
+}: ProgressBarProps): JSX.Element {
+  const fillerStyles = {
+    height: '100%',
+    width: `${width}%`,
+    backgroundColor: '#FFFFFF',
+    transition: 'width 2s ease-in-out',
+  }
   return (
     <div className="progress-bar-wrapper">
-       <div className="lable">Now Loading...</div>
-       <div className="progress-bar">
+      <div className="lable">Now Loading...</div>
+      <div className="progress-bar">
         <span style={fillerStyles}></span>
-       </div>
+      </div>
     </div>
   )
 }

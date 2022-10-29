@@ -1,56 +1,50 @@
-.buyer-machine{
- background: url('../../public/Rectangle 54.png') no-repeat  center/cover;   
-//  width: calc(547px/1.07);
-//  height: calc(925px/1.07);
- max-width: 547px;
- max-height: 925px;
+.buyer-machine {
+  background: url('../../public/Rectangle 54.png') no-repeat center/cover;
+  //  width: calc(547px/1.07);
+  //  height: calc(925px/1.07);
+  max-width: 547px;
+  max-height: 925px;
 
- padding: 22px;
- @media(max-width:600px){
+  padding: 22px;
+  @media (max-width: 600px) {
     min-width: 350px;
-    
- }
-.buyer-machine-inner-wrapper{
-    
-     overflow: hidden;
-
-}
- .heading{
+  }
+  .buyer-machine-inner-wrapper {
+    overflow: hidden;
+  }
+  .heading {
     font-size: 24px;
-    line-height: 33px;   
-    color: #8C8C8C;
+    line-height: 33px;
+    color: #8c8c8c;
     margin-bottom: 16px;
     text-align: center;
-    @media(max-width:768px){
-        font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 18px;
     }
- }
- .selector{
-    
+  }
+  .selector {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    
-    
-    .selector-inner-wrapper{
-        display: flex;
-        
-        justify-content: center;
-        margin: 18.6px 0px;
-       
-.btn-text{
-    font-size: 24px;
-    line-height: 33px;
-    color: #FFFFFF;
-    margin:0px 24px;
-    @media(max-width:768px){
-        font-size: 18px;
+
+    .selector-inner-wrapper {
+      display: flex;
+
+      justify-content: center;
+      margin: 18.6px 0px;
+
+      .btn-text {
+        font-size: 24px;
+        line-height: 33px;
+        color: #ffffff;
+        margin: 0px 24px;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
     }
-}
-    }
- }
- .nfts-container{
-    
+  }
+  .nfts-container {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 24px;
@@ -62,116 +56,106 @@
     overflow-x: hidden;
     // @media(max-width:600px){
     //     grid-template-columns: auto auto;
-        
+
     //  }
-    .collection{
-        // actually we need an image along with question logo here, 
-        background: url('../../public/collectionbg.svg') no-repeat center center/cover;
-        height: 131px;
-        width: 131px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @media(max-width:768px){
-            height: 88px;
-            width: 88px;
-           }
-        .image-container{
-            height: 100px;
-            width: 100px;
-            @media(max-width:768px){
-                height: 80px;
-                width: 80px;
-               }
-               
-            
-            img{
-object-fit: contain;
-max-width: 100%;
-            }
-            svg{
-object-fit: contain;
-max-width: 100%;
-            }
+    .collection {
+      // actually we need an image along with question logo here,
+      background: url('../../public/collectionbg.svg') no-repeat center
+        center/cover;
+      height: 131px;
+      width: 131px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 768px) {
+        height: 88px;
+        width: 88px;
+      }
+      .image-container {
+        height: 100px;
+        width: 100px;
+        @media (max-width: 768px) {
+          height: 80px;
+          width: 80px;
         }
-    }
-    .collection-active{
-        
-    }
- }
- .buy-section{
-    
-    
-    .inner-wrapper{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding: 32px 0px;
-        .left-section{
-            :nth-child(1){
-                font-size: 24px;
-                line-height: 33px;
-                color: #FFFFFF;
-                @media(max-width:768px){
-                    font-size: 18px;
-                }
-                
-            }
-            :nth-child(2){
-                font-size: 16px;
-line-height: 22px;
-color: #8C8C8C;
-@media(max-width:768px){
-    font-size: 14px;
-}
 
-            }
-
-    
+        img {
+          object-fit: contain;
+          max-width: 100%;
         }
-        .right-section{
-            .button{
-                width: 145px;
-                height: 47px;
-                font-size: 18px;
-line-height: 25px;
-color: #000000;
-
-            }
-            .stake-btn{
-                border: 1px solid rgba(255, 255, 255, 1);
-                background: transparent;
-                color: white;
-                margin-top: 16px;
-            }
+        svg {
+          object-fit: contain;
+          max-width: 100%;
         }
+      }
     }
- }
- .bottom{
+    .collection-active {
+    }
+  }
+  .buy-section {
+    .inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0px;
+      .left-section {
+        :nth-child(1) {
+          font-size: 24px;
+          line-height: 33px;
+          color: #ffffff;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+        :nth-child(2) {
+          font-size: 16px;
+          line-height: 22px;
+          color: #8c8c8c;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .right-section {
+        .button {
+          width: 145px;
+          height: 47px;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+        .stake-btn {
+          border: 1px solid rgba(255, 255, 255, 1);
+          background: transparent;
+          color: white;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .bottom {
     margin-bottom: 35px;
-    .inner-wrapper{
-        
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
-        :nth-child(1){
-            font-size: 24px;
-line-height: 33px;
-color: #FFFFFF;
-@media(max-width:768px){
-    font-size: 18px;
-}
-
+    .inner-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      :nth-child(1) {
+        font-size: 24px;
+        line-height: 33px;
+        color: #ffffff;
+        @media (max-width: 768px) {
+          font-size: 18px;
         }
-        :nth-child(2){
-            font-size: 24px;
-            line-height: 33px;
-            text-align: right;
-            color: #FFFFFF;
-            @media(max-width:768px){
-                font-size: 18px;
-            }
+      }
+      :nth-child(2) {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: right;
+        color: #ffffff;
+        @media (max-width: 768px) {
+          font-size: 18px;
         }
+      }
     }
- }
+  }
 }

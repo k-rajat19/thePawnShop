@@ -1,70 +1,59 @@
-.shop-interface-card{
-    background: url('../../public/Rectangle 53.png') no-repeat center center/cover;
-    
-    max-width: 359px;
-    max-height: 520px;
-    @media(max-width:768px){
-        min-width: 330px;
-        min-height: 413px;
+.shop-interface-card {
+  background: url('../../public/Rectangle 53.png') no-repeat center center/cover;
+
+  max-width: 359px;
+  max-height: 520px;
+  @media (max-width: 768px) {
+    min-width: 330px;
+    min-height: 413px;
+  }
+  .card-inner-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 32px;
+
+    .heading {
+      font-size: 24px;
+      line-height: 33px;
+      color: #ffffff;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        line-height: 22px;
+        font-size: 16px;
+      }
     }
-    .card-inner-wrapper{
-        
-        display: flex;
-        // justify-content: space-between;
-        flex-direction: column;
-        
-        width: 100%;
-        padding: 32px;
-        
-        .heading{
-            font-size: 24px;
-line-height: 33px;
-color: #FFFFFF;
-text-align: center;
+    .image-container {
+      margin-top: 27px;
+      margin-bottom: 27px;
 
-@media(max-width:768px){
-    line-height: 22px;
-    font-size: 16px;
-}
-        }
-        .image-container{
-           
-            
-            margin-top: 27px;
-            margin-bottom: 27px;
-            
-            
-            
-            img{
-                
-                object-fit: contain;
-                
-                
-                
-                width: inherit;
-                height: inherit;
-                max-width: 100%;
-            }
-        }
-        .toggle-btn-container{
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            
-            .toggle-btn{
-                 width: 32px;
-                 height: 8px;
-                 background: #313131;
-                 cursor: pointer;
-                 margin-right: 8px;
-            }
-            .active{
-                width: 64px;
-                background: #FFFFFF;
-            }
-        }
-    
+      img {
+        object-fit: contain;
 
+        width: inherit;
+        height: inherit;
+        max-width: 100%;
+      }
     }
+    .toggle-btn-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
 
+      .toggle-btn {
+        width: 32px;
+        height: 8px;
+        background: #313131;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+      .active {
+        width: 64px;
+        background: #ffffff;
+      }
+    }
+  }
 }

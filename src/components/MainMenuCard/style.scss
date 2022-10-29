@@ -1,76 +1,68 @@
-.main-menu-card{
- max-width: 602px;   
- min-height: calc(602px/1.21);
- 
- background: url('../../public/Rectangle 5.png') no-repeat center center/contain ;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 50px;
- 
- .main-menu-card-inner-wrapper{
-    
+.main-menu-card {
+  max-width: 602px;
+  min-height: calc(602px / 1.21);
+
+  background: url('../../public/Rectangle 5.png') no-repeat center
+    center/contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+  .main-menu-card-inner-wrapper {
     height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    
+
     width: 100%;
-    
-    .image-container{
-        width: 100%;
-        height: 100%;
-        
-        
-        img{
-            
-            object-fit: contain;
-            
-            
-            
-            width: inherit;
-            height: inherit;
-            max-width: 100%;
-        }
-    }
-    .text-container{
-        
-        
-        margin-bottom: 40px;
-        margin-top: 35px;
-        .title{
-            font-size: 18px;
-line-height: 25px;
-text-transform: capitalize;
-color: #FFFFFF;
-margin-bottom: 12px;
-        }
-        .para{
-            font-size: 14px;
-line-height: 150%;
-letter-spacing: 0.1em;
-text-transform: capitalize;
-color: #C1C1C1;
 
-        }
-    }
-    .toggle-btn-container{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        
-        .toggle-btn{
-             width: 32px;
-             height: 8px;
-             background: #313131;
-             cursor: pointer;
-             margin-right: 8px;
-        }
-        .active{
-            width: 64px;
-            background: #FFFFFF;
-        }
-    }
+    .image-container {
+      width: 100%;
+      height: 100%;
 
- }
+      img {
+        object-fit: contain;
+
+        width: inherit;
+        height: inherit;
+        max-width: 100%;
+      }
+    }
+    .text-container {
+      margin-bottom: 40px;
+      margin-top: 35px;
+      .title {
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+      .para {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        color: #c1c1c1;
+      }
+    }
+    .toggle-btn-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      .toggle-btn {
+        width: 32px;
+        height: 8px;
+        background: #313131;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+      .active {
+        width: 64px;
+        background: #ffffff;
+      }
+    }
+  }
 }

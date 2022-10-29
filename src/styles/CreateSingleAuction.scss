@@ -1,719 +1,643 @@
-.create-single-auction{
-    background: url("../../public/Rectangle 13.png") no-repeat center center/cover;
-    min-height: 100vh;
-    padding: 32px 32px;
-    @media(max-width:1024px){
-        
-        
-        padding: 0px;
+.create-single-auction {
+  background: url('../../public/Rectangle 13.png') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 32px 32px;
+  @media (max-width: 1024px) {
+    padding: 0px;
+  }
+  .create-single-auction-inner-wrapper {
+    @media (max-width: 1200px) {
+      padding: 32px 0px;
     }
-    .create-single-auction-inner-wrapper{
-        
-        
-        @media(max-width:1200px){
-            padding: 32px 0px;
-        }
 
+    .create-auction-machine {
+      background: url('../../public/Rectangle 5 (8).png') no-repeat center;
+      max-width: 1100px;
+      height: 772px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      margin-top: 93px;
 
-
-        .create-auction-machine{
-            background: url('../../public/Rectangle 5 (8).png') no-repeat center;
-            max-width: 1100px;
-            height: 772px;
-            margin: auto;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            display: flex;
-            margin-top: 93px;
-
-            @media(max-width:1200px){
-                display: none;
-            }
-            .inventory-section{
-              
-              width: 50%;
-              padding: 30px;
-              .heading-container{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-bottom: 16px;
-                
-
-:nth-child(1){
-    font-size: 24px;
-    line-height: 33px;
-    /* identical to box height */
-    
-    
-    color: #FFFFFF;
-    
-}
-:nth-child(2){
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height */
-    
-    
-    color: #8C8C8C;
-}
-              }
-              .title-container{
-                /* identical to box height */
-                
-                padding: 16px;
-              
-        text-align: center;
-                .title{
-                    
-                   
-                    font-size: 24px;
-                    line-height: 33px;
-                    color: #FFFFFF;
-                }
-              }
-              .cards-container{
-              
-                padding-top: 24px;
-            .cards-container-inner-wrapper{
-              
-                // border: 2px solid red;
-                
-                height: 470px;
-                overflow-x: hidden;
-                overflow-y: auto;
-                
-            }
-            .collections-wrapper{
-                
-                display: grid;
-                grid-template-columns: auto auto auto;
-                row-gap: 24px;
-                column-gap: 24px;
-                padding-right: 14px;
-            }
-                .collection{
-                    background: url('../public/collectionbg.svg') no-repeat center ;
-                    min-height: 131px;
-                    min-width: 131px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                    .image-container{
-                        height: 100px;
-                        width: 100px;
-                        
-                        img{
-            object-fit: contain;
-            max-width: 100%;
-                        }
-                        svg{
-            object-fit: contain;
-            max-width: 100%;
-                        }
-                    }
-                }
-              }
-            }
-            .create-section{
-                
-                width: 50%;
-                padding: 40px;
-                .close-btn-container{
-             
-             display: flex;
-             justify-content: flex-end;
-                }
-                .connected-wallet-section{
-                    display: flex;
-                    flex-direction: column;
-                    .heading{
-                        font-size: 14px;
-                        line-height: 19px;
-                        
-                        color: #515151;
-                        
-                        
-                    }
-                    .connected-wallet-container{
-                        height: 77px;
-                       display: flex;
-                        border: 1px solid #3D3D3D;
-                        padding: 20px;
-                        margin-top: 12px;
-                        .logo{
-                             height: 40px;
-                             width: 40px;
-                             background: #2B2B2C;
-                             img{
-                                object-fit: contain;
-                                max-width: 100%;
-                             }
-                        }
-                        .info{
-                            display: flex;
-                            flex-direction: column;
-                            margin-left: 14px;
-                            :nth-child(1){
-                                font-size: 16px;
-                                line-height: 22px;
-                                /* identical to box height */
-                                
-                                
-                                color: #FFFFFF;
-                                
-                            }
-                            :nth-child(2){
-                                font-size: 12px;
-                                line-height: 16px;
-                                /* identical to box height */
-                                
-                                
-                                color: #515151;
-                            }
-
-                        }
-                    }
-
-                }
-                form{
-                    display: flex;
-                    flex-direction: column;
-                    
-                    
-                    margin-top: 24px;
-                    label{
-                        font-size: 14px;
-line-height: 19px;
-
-color: #515151;
-margin-bottom: 8px;
-
-
-                    }
-                    input{
-                        height: 47px;
-                        text-align: center;
-                        outline: none;
-                        font-size: 14px;
-line-height: 19px;
-                    }
-                    #price{
-                        background: #000000;
-                        color: #515151;
-                        border: 1px solid rgba(61, 61, 61, 1);
-                    }
-                    #name{
-                        background: #1F1F1F;
-                        color: #474747;
-                        border: none;
-                        
-                        margin-bottom: 24px;
-                    }
-                    textarea{
-                        height: 47px;
-                        background: #000000;
-                        color: #515151;
-                        resize: none;
-                        padding: 13px;
-                        font-size: 14px;
-                        line-height: 19px;
-                        border: 1px solid rgba(61, 61, 61, 1);
-                        margin-bottom: 24px;
-                        &::placeholder{
-                            font-size: 14px;
-                            text-align: center;
-                            
-                            
-                            
-line-height: 19px;
-
-color: #515151;
-
-                        }
-                    }
-                    .time{
-                        
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 24px;
-                        margin-bottom: 24px;
-                        .time-heading{
-                            font-size: 14px;
-line-height: 19px;
-
-color: #515151;
-margin-bottom: 8px;
-
-                        }
-                        .time-container{
-                            display: flex;
-                            
-                            justify-content: space-between;
-                            .time-btn{
-                                width: 101px;
-                                height: 47px;
-                                background: #111111;
-border: 1px solid #3D3D3D;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 14px;
-line-height: 19px;
-
-color: #515151;
-                            }
-                            .active{
-                                background: #FFFFFF;
-                                color: #000000;
-
-                            }
-                            .time-input{
-                                width: 118px;
-                                height: 47px;
-                                background: #111111;
-border: 1px solid #3D3D3D;
-color: #515151;
-&::placeholder{
-    color: #515151;
-}
-                            }
-                        }
-                    }
-                }
-
-            }
-            // scroll bar css
-            /* width */
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:  #3D3D3D;
-    border-radius: 8px;
-  }
-  
-        }
-        .create-auction-machine-mobile{
-            display: none;
-            width: 100%;
-            
-            @media(max-width:1200px){
-                display: block;
-            }
-            .inventory-section{
-              
-                width: 50%;
-                margin: auto;
-                padding: 20px;
-                min-width: 350px;
-                
-                min-height: 583px;
-                background: url('../../public/Rectangle 5 (9).png') no-repeat center center/cover;
-                .heading-container{
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  padding-bottom: 16px;
-                  
-  
-  :nth-child(1){
-      font-size: 24px;
-      line-height: 33px;
-      /* identical to box height */
-      
-      
-      color: #FFFFFF;
-      margin-bottom: 8px;
-      @media(max-width: 768px){
-        font-size: 16px;
-        line-height: 22px;
-        
+      @media (max-width: 1200px) {
+        display: none;
       }
-  }
-  :nth-child(2){
-      font-size: 16px;
-      line-height: 22px;
-      /* identical to box height */
-      
-      
-      color: #8C8C8C;
-      @media(max-width: 768px){
-        font-size: 12px;
-        line-height: 16px;
-      }
-  }
-                }
-                .title-container{
-                  /* identical to box height */
-                  
-                  padding: 16px;
-                
-          text-align: center;
-                  .title{
-                      
-                     
-                      font-size: 24px;
-                      line-height: 33px;
-                      color: #FFFFFF;
-                      @media(max-width: 768px){
-                        font-size: 16px;
-                        line-height: 22px;
-                      }
-                  }
-                }
-                .cards-container{
-                
-                  padding-top: 24px;
-                  padding-bottom: 37px;
-              .cards-container-inner-wrapper{
-                
-                  
-                  
-                  height: 300px;
-                  overflow-x: hidden;
-                  overflow-y: auto;
-                  
-                  
-              }
-              .collections-wrapper{
-                  
-                  display: grid;
-                  grid-template-columns: auto auto auto;
-                  row-gap: 24px;
-                  column-gap: 24px;
-                  padding-right: 14px;
-                  @media(max-width:768px){
-                    column-gap: 12px;
-                    row-gap: 12px;
-                  }
-              }
-                  .collection{
-                      background: url('../../public/collectionbg.svg') no-repeat center center/cover ;
-                      min-height: 131px;
-                      min-width: 131px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      @media(max-width:1024px){
-                        min-height: 88px;
-                        min-width: 88px;
-                      }
-                      
-                      .image-container{
-                          height: 100px;
-                          width: 100px;
-                          @media(max-width:1024px){
-                            height: 80px;
-                            width: 80px;
-                          }
-                          
-                          img{
-              object-fit: contain;
-              max-width: 100%;
-                          }
-                          svg{
-              object-fit: contain;
-              max-width: 100%;
-                          }
-                      }
-                  }
-                }
-                .btn-container{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 16px;
-                    margin-bottom: 54px;
-                    .back-btn{
-                       
+      .inventory-section {
+        width: 50%;
+        padding: 30px;
+        .heading-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 16px;
 
-  height:32px;
-  width: 96px;
-  background: transparent;
-  border:1px solid rgba(255, 255, 255, 1);
-  color: white;
-  font-size: 12px;
-  
+          :nth-child(1) {
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
 
-                    }
-                    .next-btn{
-                        height:32px;
-                        width: 96px;
-                        background: white;
-                        color: black;
-                        font-size: 18px;
-                        @media(max-width: 768px){
-                            font-size: 12px;
-                        }
-                    }
-                }
-              }
-              .create-section{
-                
-                width: 50%;
-                margin: auto;
-                min-width: 350px;
-                min-height: 800px;
-                padding: 40px;
-                background: url('../../public/Rectangle 5 (9).png') no-repeat center center/cover;
-                @media(max-width:768px){
-                    padding: 10px;
-
-                }
-                .heading-container{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding-bottom: 16px;
-                    
-    
-    :nth-child(1){
-        font-size: 24px;
-        line-height: 33px;
-        /* identical to box height */
-        
-        
-        color: #FFFFFF;
-        @media(max-width: 768px){
+            color: #ffffff;
+          }
+          :nth-child(2) {
             font-size: 16px;
             line-height: 22px;
-            margin-top: 32px;
-            margin-bottom: 8px;
+            /* identical to box height */
+
+            color: #8c8c8c;
+          }
         }
-        
-    }
-    :nth-child(2){
-        font-size: 16px;
-        line-height: 22px;
-        /* identical to box height */
-        
-        
-        color: #8C8C8C;
-        @media(max-width: 768px){
-            font-size: 12px;
-            line-height: 16px;
+        .title-container {
+          /* identical to box height */
+
+          padding: 16px;
+
+          text-align: center;
+          .title {
+            font-size: 24px;
+            line-height: 33px;
+            color: #ffffff;
+          }
         }
-    }
-                  }
-                .connected-wallet-section{
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 16px;
-                    .heading{
-                        font-size: 14px;
-                        line-height: 19px;
-                        
-                        color: #515151;
-                        @media(max-width:768px){
-                            font-size: 12px;
-                        }
-                        
-                        
-                    }
-                    .connected-wallet-container{
-                        height: 77px;
-                       display: flex;
-                        border: 1px solid #3D3D3D;
-                        padding: 20px;
-                        margin-top: 12px;
-                        .logo{
-                             height: 40px;
-                             width: 40px;
-                             background: #2B2B2C;
-                             img{
-                                object-fit: contain;
-                                max-width: 100%;
-                             }
-                        }
-                        .info{
-                            display: flex;
-                            flex-direction: column;
-                            margin-left: 14px;
-                            :nth-child(1){
-                                font-size: 16px;
-                                line-height: 22px;
-                                /* identical to box height */
-                                
-                                
-                                color: #FFFFFF;
-                                @media(max-width:768px){
-                                    font-size: 14px;
-                                }
-                                
-                            }
-                            :nth-child(2){
-                                font-size: 12px;
-                                line-height: 16px;
-                                /* identical to box height */
-                                
-                                
-                                color: #515151;
-                                @media(max-width:768px){
-                                    font-size: 12px;
-                                }
-                            }
+        .cards-container {
+          padding-top: 24px;
+          .cards-container-inner-wrapper {
+            // border: 2px solid red;
 
-                        }
-                    }
+            height: 470px;
+            overflow-x: hidden;
+            overflow-y: auto;
+          }
+          .collections-wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 24px;
+            column-gap: 24px;
+            padding-right: 14px;
+          }
+          .collection {
+            background: url('../public/collectionbg.svg') no-repeat center;
+            min-height: 131px;
+            min-width: 131px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                }
-                form{
-                    display: flex;
-                    flex-direction: column;
-                    
-                    
-                    margin-top: 24px;
-                    label{
-                        font-size: 14px;
-line-height: 19px;
+            .image-container {
+              height: 100px;
+              width: 100px;
 
-color: #515151;
-margin-bottom: 8px;
-@media(max-width:768px){
-    font-size: 12px;
-}
-
-
-                    }
-                    input{
-                        height: 47px;
-                        text-align: center;
-                        outline: none;
-                        font-size: 14px;
-line-height: 19px;
-@media(max-width:768px){
-    font-size: 12px;
-}
-                    }
-                    #price{
-                        background: #000000;
-                        color: #515151;
-                        border: 1px solid rgba(61, 61, 61, 1);
-                    }
-                    #name{
-                        background: #1F1F1F;
-                        color: #474747;
-                        border: none;
-                        
-                        margin-bottom: 24px;
-                    }
-                    textarea{
-                        height: 47px;
-                        background: #000000;
-                        color: #515151;
-                        resize: none;
-                        padding: 13px;
-                        font-size: 14px;
-                        line-height: 19px;
-                        border: 1px solid rgba(61, 61, 61, 1);
-                        margin-bottom: 24px;
-                        @media(max-width:768px){
-                            font-size: 12px;
-                        }
-                        &::placeholder{
-                            font-size: 14px;
-                            text-align: center;
-                            
-                            
-                            
-line-height: 19px;
-
-color: #515151;
-@media(max-width:768px){
-    font-size: 12px;
-}
-
-                        }
-                    }
-                    .time{
-                        
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 24px;
-                        margin-bottom: 24px;
-                        .time-heading{
-                            font-size: 14px;
-line-height: 19px;
-
-color: #515151;
-margin-bottom: 8px;
-@media(max-width:768px){
-    font-size: 12px;
-}
-
-                        }
-                        .time-container{
-                            display: flex;
-                            
-                            justify-content: space-between;
-                            .time-btn{
-                                width: 101px;
-                                height: 47px;
-                                background: #111111;
-border: 1px solid #3D3D3D;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 14px;
-line-height: 19px;
-
-color: #515151;
-margin-right: 8px;
-@media(max-width:768px){
-    font-size: 12px;
-}
-                            }
-                            .active{
-                                background: #FFFFFF;
-                                color: #000000;
-
-                            }
-                            .time-input{
-                                width: 118px;
-                                height: 47px;
-                                background: #111111;
-border: 1px solid #3D3D3D;
-color: #515151;
-&::placeholder{
-    color: #515151;
-}
-                            }
-                        }
-                    }
-                    .create-btn{
-                        
-                        height:47px;
-                        width: 100%;
-                        background: white;
-                        color: black;
-                        font-size: 18px;
-                        @media(max-width:768px){
-                            height: 32px;
-                            font-size: 12px;
-                        }
-
-                    }
-                }
-                .btn-container{
-                    margin-top: 32px;
-                }
-
+              img {
+                object-fit: contain;
+                max-width: 100%;
+              }
+              svg {
+                object-fit: contain;
+                max-width: 100%;
+              }
             }
+          }
         }
+      }
+      .create-section {
+        width: 50%;
+        padding: 40px;
+        .close-btn-container {
+          display: flex;
+          justify-content: flex-end;
+        }
+        .connected-wallet-section {
+          display: flex;
+          flex-direction: column;
+          .heading {
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #515151;
+          }
+          .connected-wallet-container {
+            height: 77px;
+            display: flex;
+            border: 1px solid #3d3d3d;
+            padding: 20px;
+            margin-top: 12px;
+            .logo {
+              height: 40px;
+              width: 40px;
+              background: #2b2b2c;
+              img {
+                object-fit: contain;
+                max-width: 100%;
+              }
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 14px;
+              :nth-child(1) {
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                color: #ffffff;
+              }
+              :nth-child(2) {
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height */
+
+                color: #515151;
+              }
+            }
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+
+          margin-top: 24px;
+          label {
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #515151;
+            margin-bottom: 8px;
+          }
+          input {
+            height: 47px;
+            text-align: center;
+            outline: none;
+            font-size: 14px;
+            line-height: 19px;
+          }
+          #price {
+            background: #000000;
+            color: #515151;
+            border: 1px solid rgba(61, 61, 61, 1);
+          }
+          #name {
+            background: #1f1f1f;
+            color: #474747;
+            border: none;
+
+            margin-bottom: 24px;
+          }
+          textarea {
+            height: 47px;
+            background: #000000;
+            color: #515151;
+            resize: none;
+            padding: 13px;
+            font-size: 14px;
+            line-height: 19px;
+            border: 1px solid rgba(61, 61, 61, 1);
+            margin-bottom: 24px;
+            &::placeholder {
+              font-size: 14px;
+              text-align: center;
+
+              line-height: 19px;
+
+              color: #515151;
+            }
+          }
+          .time {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            .time-heading {
+              font-size: 14px;
+              line-height: 19px;
+
+              color: #515151;
+              margin-bottom: 8px;
+            }
+            .time-container {
+              display: flex;
+
+              justify-content: space-between;
+              .time-btn {
+                width: 101px;
+                height: 47px;
+                background: #111111;
+                border: 1px solid #3d3d3d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                line-height: 19px;
+
+                color: #515151;
+              }
+              .active {
+                background: #ffffff;
+                color: #000000;
+              }
+              .time-input {
+                width: 118px;
+                height: 47px;
+                background: #111111;
+                border: 1px solid #3d3d3d;
+                color: #515151;
+                &::placeholder {
+                  color: #515151;
+                }
+              }
+            }
+          }
+        }
+      }
+      // scroll bar css
+      /* width */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #3d3d3d;
+        border-radius: 8px;
+      }
     }
+    .create-auction-machine-mobile {
+      display: none;
+      width: 100%;
+
+      @media (max-width: 1200px) {
+        display: block;
+      }
+      .inventory-section {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        min-width: 350px;
+
+        min-height: 583px;
+        background: url('../../public/Rectangle 5 (9).png') no-repeat center
+          center/cover;
+        .heading-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 16px;
+
+          :nth-child(1) {
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+
+            color: #ffffff;
+            margin-bottom: 8px;
+            @media (max-width: 768px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+          :nth-child(2) {
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+
+            color: #8c8c8c;
+            @media (max-width: 768px) {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+        .title-container {
+          /* identical to box height */
+
+          padding: 16px;
+
+          text-align: center;
+          .title {
+            font-size: 24px;
+            line-height: 33px;
+            color: #ffffff;
+            @media (max-width: 768px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+        .cards-container {
+          padding-top: 24px;
+          padding-bottom: 37px;
+          .cards-container-inner-wrapper {
+            height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+          }
+          .collections-wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 24px;
+            column-gap: 24px;
+            padding-right: 14px;
+            @media (max-width: 768px) {
+              column-gap: 12px;
+              row-gap: 12px;
+            }
+          }
+          .collection {
+            background: url('../../public/collectionbg.svg') no-repeat center
+              center/cover;
+            min-height: 131px;
+            min-width: 131px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 1024px) {
+              min-height: 88px;
+              min-width: 88px;
+            }
+
+            .image-container {
+              height: 100px;
+              width: 100px;
+              @media (max-width: 1024px) {
+                height: 80px;
+                width: 80px;
+              }
+
+              img {
+                object-fit: contain;
+                max-width: 100%;
+              }
+              svg {
+                object-fit: contain;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+        .btn-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 16px;
+          margin-bottom: 54px;
+          .back-btn {
+            height: 32px;
+            width: 96px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 1);
+            color: white;
+            font-size: 12px;
+          }
+          .next-btn {
+            height: 32px;
+            width: 96px;
+            background: white;
+            color: black;
+            font-size: 18px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .create-section {
+        width: 50%;
+        margin: auto;
+        min-width: 350px;
+        min-height: 800px;
+        padding: 40px;
+        background: url('../../public/Rectangle 5 (9).png') no-repeat center
+          center/cover;
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
+        .heading-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 16px;
+
+          :nth-child(1) {
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+
+            color: #ffffff;
+            @media (max-width: 768px) {
+              font-size: 16px;
+              line-height: 22px;
+              margin-top: 32px;
+              margin-bottom: 8px;
+            }
+          }
+          :nth-child(2) {
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+
+            color: #8c8c8c;
+            @media (max-width: 768px) {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+        .connected-wallet-section {
+          display: flex;
+          flex-direction: column;
+          margin-top: 16px;
+          .heading {
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #515151;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+          .connected-wallet-container {
+            height: 77px;
+            display: flex;
+            border: 1px solid #3d3d3d;
+            padding: 20px;
+            margin-top: 12px;
+            .logo {
+              height: 40px;
+              width: 40px;
+              background: #2b2b2c;
+              img {
+                object-fit: contain;
+                max-width: 100%;
+              }
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 14px;
+              :nth-child(1) {
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                color: #ffffff;
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                }
+              }
+              :nth-child(2) {
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height */
+
+                color: #515151;
+                @media (max-width: 768px) {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+
+          margin-top: 24px;
+          label {
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #515151;
+            margin-bottom: 8px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+          input {
+            height: 47px;
+            text-align: center;
+            outline: none;
+            font-size: 14px;
+            line-height: 19px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+          #price {
+            background: #000000;
+            color: #515151;
+            border: 1px solid rgba(61, 61, 61, 1);
+          }
+          #name {
+            background: #1f1f1f;
+            color: #474747;
+            border: none;
+
+            margin-bottom: 24px;
+          }
+          textarea {
+            height: 47px;
+            background: #000000;
+            color: #515151;
+            resize: none;
+            padding: 13px;
+            font-size: 14px;
+            line-height: 19px;
+            border: 1px solid rgba(61, 61, 61, 1);
+            margin-bottom: 24px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+            &::placeholder {
+              font-size: 14px;
+              text-align: center;
+
+              line-height: 19px;
+
+              color: #515151;
+              @media (max-width: 768px) {
+                font-size: 12px;
+              }
+            }
+          }
+          .time {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            .time-heading {
+              font-size: 14px;
+              line-height: 19px;
+
+              color: #515151;
+              margin-bottom: 8px;
+              @media (max-width: 768px) {
+                font-size: 12px;
+              }
+            }
+            .time-container {
+              display: flex;
+
+              justify-content: space-between;
+              .time-btn {
+                width: 101px;
+                height: 47px;
+                background: #111111;
+                border: 1px solid #3d3d3d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                line-height: 19px;
+
+                color: #515151;
+                margin-right: 8px;
+                @media (max-width: 768px) {
+                  font-size: 12px;
+                }
+              }
+              .active {
+                background: #ffffff;
+                color: #000000;
+              }
+              .time-input {
+                width: 118px;
+                height: 47px;
+                background: #111111;
+                border: 1px solid #3d3d3d;
+                color: #515151;
+                &::placeholder {
+                  color: #515151;
+                }
+              }
+            }
+          }
+          .create-btn {
+            height: 47px;
+            width: 100%;
+            background: white;
+            color: black;
+            font-size: 18px;
+            @media (max-width: 768px) {
+              height: 32px;
+              font-size: 12px;
+            }
+          }
+        }
+        .btn-container {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
 }
 
-.vertical-border{
-    background: url('../../public/verticalborder.svg') no-repeat center center/cover ;
-    width: 7px;
-    height: 100%;
-    // width: inherit;
+.vertical-border {
+  background: url('../../public/verticalborder.svg') no-repeat center
+    center/cover;
+  width: 7px;
+  height: 100%;
+  // width: inherit;
 }
