@@ -14,6 +14,9 @@ module.exports = {
     semi: 0,
     'comma-dangle': 0,
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
+    ],
   },
 }

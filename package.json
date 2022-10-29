@@ -37,10 +37,10 @@
     "vite": "^2.9.0"
   },
   "lint-staged": {
-    "**/*.{ts,tsx,css,scss,json}": [
-      "yarn run lint",
-      "prettier --write"
-    ]
+  
+    "*.{js,ts,jsx,tsx}": "eslint --fix ",
+    "*.{css,scss,md,html,json,js,ts,jsx,tsx}": "prettier --write"
+    
   },
   "main": "index.js",
   "repository": "git@github.com:k-rajat19/thePawnShop.git",
