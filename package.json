@@ -37,7 +37,7 @@
     "vite": "^2.9.0"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
+    "**/*.{ts,tsx,css,scss,json}": [
       "yarn run lint",
       "prettier --write"
     ]
