@@ -39,7 +39,7 @@
   "lint-staged": {
   
     "*.{js,ts,jsx,tsx}": "eslint --fix ",
-    "*.{css,scss,md,html,json,js,ts,jsx,tsx}": "prettier --write"
+    "*.{css,scss,md,html,json,js,ts,jsx,tsx}": "prettier --write ."
     
   },
   "main": "index.js",
