@@ -10,6 +10,8 @@ export default function Loading(): JSX.Element {
 
   useEffect(() => {
     const intervalId = setInterval(() => setProgress(progress + 99), 1000)
+
+    
     return function cleanup() {
       clearInterval(intervalId)
     }
