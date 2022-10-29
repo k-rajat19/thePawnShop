@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier'],
   rules: {
-    semi: 2,
+    semi: 0,
     'comma-dangle': 0,
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
